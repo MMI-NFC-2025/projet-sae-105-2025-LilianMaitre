@@ -1,0 +1,37 @@
+.section--gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.media-card__title {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blanc);
+    margin-bottom: 0.5rem;
+}
+
+.media-card__thumb-link {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.media-card__img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.media-card__text {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: var(--blanc);
+    margin-bottom: 0.5rem;
+}
+
+.media-card__link a {
+    font-size: 0.75rem;
+    color: var(--orange);
+    text-decoration: underline;
+}
