@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Étoiles oubliées : un site pour (re)découvrir les femmes de science et comprendre les mécanismes d’effacement à travers la figure de Vera Rubin." />
+    <title>Étoiles oubliées</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS global (même logique que Housemood) -->
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <!-- JS global -->
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="/">
+            <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+        </a>
+    
+        <p class="header__lang">
+            <button class="header__lang-btn" type="button">FR/EN</button>
+        </p>
+    
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+        </button>
+    
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <!-- liens du menu -->
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Hero Vera Rubin -->
+        <section class="hero hero--etoiles">
+            <div class="hero__media">
+                <img class="hero__img" src="/assets/img/vera-rubin-hero.jpg"
+                    alt="Portrait de Vera Rubin devant un ciel étoilé" />
+                <div class="hero__frame"></div>
+            </div>
+
+            <div class="hero__content">
+                <p class="hero__kicker">Étoiles oubliées</p>
+                <h1 class="hero__title">
+                    Vera Rubin<br />
+                    <span class="u-highlight">
+                        Le regard qui a changé la science
+                    </span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="section section--wrapper">
+            <header class="section__header">
+                <h2 class="section__title">Introduction</h2>
+            </header>
+
+            <p class="section__chapo">
+                À l’heure où l’égalité des genres et la démocratisation du
+                savoir sont des enjeux majeurs, ce site offre un espace
+                d’information, de réflexion et de découvertes.
+            </p>
+            <p>
+                Il invite à (re)découvrir les grandes scientifiques de
+                l’ombre, à s’interroger sur les mécanismes d’effacement à
+                travers l’exemple de Vera Rubin, et à célébrer la diversité
+                des parcours et des contributions féminines.
+            </p>
+
+            <div class="section__decor section__decor--stars"></div>
+        </section>
+
+        <!-- Articles -->
+        <section class="section section--wrapper section--articles" aria-labelledby="articlesTitle">
+            <header class="section__header">
+                <h2 class="section__title" id="articlesTitle">
+                    Nos articles
+                </h2>
+            </header>
+
+            <div class="articles">
+                <article class="card-article">
+                    <div class="card-article__decor card-article__decor--top">
+                        <!-- étoile décorative via CSS -->
+                    </div>
+
+                    <a class="card-article__link" href="/article-vera-rubin.html">
+                        <img class="card-article__img" src="/assets/img/article-vera-rubin.jpg"
+                            alt="Vera Rubin en train d’observer le ciel avec un télescope" />
+                        <div class="card-article__body">
+                            <h3 class="card-article__title">Vera Rubin</h3>
+                            <p class="card-article__excerpt">
+                                Vera Rubin, née en 1928 et passionnée d’astronomie
+                                dès l’enfance, a affronté les discriminations pour
+                                devenir une astrophysicienne* pionnière. Ses travaux
+                                sur la rotation des galaxies ont révélé la matière
+                                noire*, révolutionnant la cosmologie* tout en
+                                illustrant l’“effet Matilda*” d’effacement des
+                                femmes scientifiques.
+                            </p>
+                            <p class="card-article__cta">
+                                <span class="btn btn--primary">En savoir plus</span>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-article">
+                    <a class="card-article__link" href="/article-femmes-science-litterature.html">
+                        <img class="card-article__img" src="/assets/img/article-litterature.jpg"
+                            alt="Couverture colorée représentant les femmes de science dans la littérature" />
+                        <div class="card-article__body">
+                            <h3 class="card-article__title">
+                                Les femmes de science dans la littérature
+                            </h3>
+                            <p class="card-article__excerpt">
+                                La littérature met de plus en plus en scène des
+                                femmes scientifiques comme héroïnes, là où elles
+                                furent longtemps invisibles ou secondaires. Des
+                                albums jeunesse aux romans documentaires, ces récits
+                                revisitent les trajectoires de pionnières comme
+                                Franklin, Lovelace, du Châtelet, Johnson ou Rubin.
+                            </p>
+                            <p class="card-article__cta">
+                                <span class="btn btn--primary">En savoir plus</span>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-article">
+                    <a class="card-article__link" href="/article-vulgarisation-matiere-noire.html">
+                        <img class="card-article__img" src="/assets/img/article-vulgarisation.jpg"
+                            alt="Schéma simplifié de galaxies pour expliquer la matière noire" />
+                        <div class="card-article__body">
+                            <h3 class="card-article__title">
+                                Vulgarisation*
+                            </h3>
+                            <p class="card-article__excerpt">
+                                Dans les années 1970, Vera Rubin met en évidence que
+                                les étoiles en périphérie des galaxies tournent aussi
+                                vite que celles du centre. Cette observation révèle
+                                l’existence de la matière noire*, une masse invisible
+                                qui représenterait plus de 80 % de l’Univers et
+                                agit comme une colle gravitationnelle.
+                            </p>
+                            <p class="card-article__cta">
+                                <span class="btn btn--primary">En savoir plus</span>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-article">
+                    <a class="card-article__link" href="/article-interstellar.html">
+                        <img class="card-article__img" src="/assets/img/article-interstellar.jpg"
+                            alt="Scène du film Interstellar mettant en avant les personnages de Murphy et Amelia" />
+                        <div class="card-article__body">
+                            <h3 class="card-article__title">Interstellar</h3>
+                            <p class="card-article__excerpt">
+                                Dans “Interstellar”, Murphy Cooper et Amelia Brand
+                                offrent une visibilité rare aux femmes scientifiques
+                                au cinéma. Physicienne de la NASA, Murphy résout
+                                l’équation qui sauve l’humanité, tandis qu’Amelia
+                                dirige la mission spatiale, entre leadership,
+                                émotions et légitimité scientifique.
+                            </p>
+                            <p class="card-article__cta">
+                                <span class="btn btn--primary">En savoir plus</span>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-article">
+                    <a class="card-article__link" href="/article-hubert-reeves.html">
+                        <img class="card-article__img" src="/assets/img/article-hubert-reeves.jpg"
+                            alt="Illustration de galaxie inspirée du livre d’Hubert Reeves" />
+                        <div class="card-article__body">
+                            <h3 class="card-article__title">
+                                Le livre d’Hubert Reeves
+                            </h3>
+                            <p class="card-article__excerpt">
+                                “Petite histoire de la matière et de l’Univers”
+                                d’Hubert Reeves propose une plongée accessible et
+                                poétique dans l’histoire du cosmos. Le livre retrace
+                                la naissance de l’Univers, la formation de la
+                                matière, le rôle des galaxies et de la mystérieuse
+                                matière sombre à travers une vulgarisation claire.
+                            </p>
+                            <p class="card-article__cta">
+                                <span class="btn btn--primary">En savoir plus</span>
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <footer class="section__footer">
+                <a class="btn btn--secondary" href="/articles.html">
+                    Retrouvez tous nos articles ici
+                </a>
+            </footer>
+        </section>
+
+        <!-- Glossaire -->
+        <section class="section section--wrapper section--glossaire" aria-labelledby="glossaireTitle">
+            <header class="section__header">
+                <h2 class="section__title" id="glossaireTitle">
+                    Glossaire
+                </h2>
+            </header>
+
+            <p>
+                Ce site peut contenir des mots complexes à comprendre, mais
+                pas de panique&nbsp;! La page glossaire répertorie les termes
+                scientifiques ou techniques qui nécessitent une petite
+                définition.
+            </p>
+            <p>
+                Dans les textes, ces mots sont marqués d’une astérisque (*)
+                pour signaler qu’une explication est disponible.
+            </p>
+
+            <footer class="section__footer">
+                <a class="btn btn--secondary" href="/glossaire.html">
+                    Page glossaire
+                </a>
+            </footer>
+        </section>
+
+        <!-- Autres projets -->
+        <section class="section section--wrapper section--projects" aria-labelledby="autresProjetsTitle">
+            <header class="section__header">
+                <h2 class="section__title" id="autresProjetsTitle">
+                    Autres projets
+                </h2>
+            </header>
+
+            <p>
+                Vous pouvez consulter les autres projets réalisés par mon
+                groupe de TP sur une page dédiée, pour explorer d’autres
+                univers, sujets et expériences interactives.
+            </p>
+
+            <footer class="section__footer">
+                <a class="btn btn--secondary" href="/autres-projets.html">
+                    Autres projets
+                </a>
+            </footer>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner section--wrapper">
+            <div class="footer__brand">
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+                <p class="footer__site-name">Étoiles oubliées</p>
+            </div>
+    
+            <nav class="footer__nav" aria-label="Navigation pied de page">
+                <h2 class="footer__title">NAVIGATION</h2>
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item">
+                        <a class="footer__link" href="/">ACCUEIL</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/articles.html">ARTICLES</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/a-propos.html">À PROPOS</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/contact.html">CONTACT</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/glossaire.html">GLOSSAIRE</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <address class="footer__infos">
+                <h2 class="footer__title">CONTACT</h2>
+                <p>
+                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                        lilian.maitre@edu.univ-fcomte.fr
+                    </a>
+                </p>
+                <p class="footer__author">
+                    Maitre<br />
+                    Lilian<br />
+                    MMi1_B2
+                </p>
+            </address>
+        </div>
+    
+        <p class="footer__legal">
+            projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
+            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                département MMi de Montbéliard
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
