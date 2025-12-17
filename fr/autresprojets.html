@@ -39,24 +39,78 @@
         </button>
 
         <nav class="header__menu menu" id="mainNav" hidden>
+            <p class="menu__brand">Étoiles Oubliées</p>
+        
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link" href="/">Accueil</a>
+                    <a class="menu__link" href="/index.html">Accueil</a>
+                </li>
+        
+                <!-- Bouton Articles qui ouvre/ferme la sous-liste -->
+                <li class="menu__item menu__item--has-children">
+                    <button class="menu__link menu__link--button" type="button" aria-expanded="false"
+                        aria-controls="menuArticles" id="btnArticles">
+                        Articles
+                    </button>
+        
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/vera-rubin.html">
+                                Vera Rubin
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/femmes-litterature.html">
+                                Les femmes &amp; la littérature
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/vulgarisation-theorie.html">
+                                Vulgarisation de la théorie
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/interstellar.html">
+                                Interstellar et les femmes
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/hubert-reeves.html">
+                                Le livre d’Hubert Reeves
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+        
+                <li class="menu__item">
+                    <a class="menu__link" href="/frise-matilda.html">Frise des Matilda</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/articles.html">Articles</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/a-propos.html">À propos</a>
+                    <a class="menu__link" href="/galerie.html">Galerie</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="/contact.html">Contact</a>
                 </li>
                 <li class="menu__item">
+                    <a class="menu__link" href="/a-propos.html">À propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/autres-projets.html">Autres projets</a>
+                </li>
+                <li class="menu__item">
                     <a class="menu__link" href="/glossaire.html">Glossaire</a>
                 </li>
             </ul>
+        
+            <p class="menu__legal">
+                projet réalisé en 2025 dans le cadre d’un exercice pédagogique
+                au
+                <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                    département MMi de Montbéliard
+                </a>
+            </p>
         </nav>
+
     </header>
 
     <main class="wrapper wrapper--article">
