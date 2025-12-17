@@ -4,4 +4,9 @@
     --blanc: #ffffff;
     --bleu: #04009f;
     --noir: #000000;
+    /* number */
+    --text-sm: 0.8125rem;
+    --text-m: 0.9375rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 2.25rem;
 }
