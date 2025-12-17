@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Étoiles oubliées — English homepage dedicated to Vera Rubin and women in science, with articles, resources and a glossary about astronomy and gender equality." />
+    <title>Étoiles oubliées — Home (EN)</title>
+
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="/index-en.html">
+            <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+        </a>
+
+        <p class="header__lang">
+            <a class="header__lang-btn" href="/index.html">FR/EN</a>
+        </p>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+        </button>
+
+        <!-- nav = version EN avec les mêmes liens que la FR -->
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <p class="menu__brand">Étoiles Oubliées</p>
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/index-en.html">Home</a>
+                </li>
+                <li class="menu__item menu__item--has-children">
+                    <button class="menu__link menu__link--button" type="button" aria-expanded="false"
+                        aria-controls="menuArticlesEn" id="btnArticlesEn">
+                        Articles
+                    </button>
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/vera-rubin-en.html">
+                                Vera Rubin
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/women-literature-en.html">
+                                Women &amp; literature
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/popularisation-en.html">
+                                Popularisation
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/interstellar-en.html">
+                                Interstellar
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/hubert-reeves-en.html">
+                                Hubert Reeves’ book
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/timeline-en.html">
+                        Matilda timeline
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/gallery-en.html">Gallery</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contact-en.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/about-en.html">About us</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/other-projects-en.html">
+                        Other projects
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/glossary-en.html">Glossary</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <!-- Hero Vera Rubin -->
+        <section class="hero hero--home-en">
+            <img class="hero__img" src="/assets/img/home-hero-vera-en.jpg"
+                alt="Portrait of Vera Rubin with a starry background" />
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    VERA RUBIN<br />
+                    <span class="hero__subtitle">
+                        The gaze that changed science
+                    </span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="section section--article section--center">
+            <h2 class="section__title">Introduction</h2>
+            <p>
+                At a time when gender equality and access to knowledge are
+                major issues, this website offers a space for information,
+                reflection and discovery.
+            </p>
+            <p>
+                It invites visitors to explore or rediscover overlooked women
+                scientists, to question how their contributions have been
+                erased using Vera Rubin’s story as a guiding thread, and to
+                celebrate the diversity of women’s careers in science.
+            </p>
+        </section>
+
+        <!-- Our articles -->
+        <section class="section section--article">
+            <h2 class="section__title">Our articles</h2>
+
+            <div class="cards-list">
+                <!-- Card 1 -->
+                <article class="card-article">
+                    <img class="card-article__img" src="/assets/img/card-vera-rubin.jpg"
+                        alt="Vera Rubin observing the night sky" />
+                    <div class="card-article__body">
+                        <h3 class="card-article__title">Vera Rubin</h3>
+                        <p class="card-article__text">
+                            Born in 1928, Vera Rubin faced discrimination to become
+                            a pioneering astrophysicist. Her work on galaxy
+                            rotation curves revealed dark matter and revolutionised
+                            cosmology, while her career illustrates the Matilda
+                            effect.
+                        </p>
+                        <a class="btn btn--secondary" href="/vera-rubin-en.html">
+                            Learn more
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-article">
+                    <img class="card-article__img" src="/assets/img/card-women-literature.jpg"
+                        alt="Covers of books about women scientists" />
+                    <div class="card-article__body">
+                        <h3 class="card-article__title">
+                            Women in science in literature
+                        </h3>
+                        <p class="card-article__text">
+                            From children’s books to documentary novels, more and
+                            more stories highlight women scientists as main
+                            characters, questioning stereotypes and inspiring new
+                            generations.
+                        </p>
+                        <a class="btn btn--secondary" href="/women-literature-en.html">
+                            Learn more
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-article">
+                    <img class="card-article__img" src="/assets/img/card-popularisation.jpg"
+                        alt="Galaxy seen through a telescope" />
+                    <div class="card-article__body">
+                        <h3 class="card-article__title">Popularisation*</h3>
+                        <p class="card-article__text">
+                            Rubin’s work on galaxy rotation helped reveal dark
+                            matter, an invisible component making up most of the
+                            Universe. This article explains the discovery in clear,
+                            accessible terms.
+                        </p>
+                        <a class="btn btn--secondary" href="/popularisation-en.html">
+                            Learn more
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card-article">
+                    <img class="card-article__img" src="/assets/img/card-interstellar.jpg"
+                        alt="Frame from the movie Interstellar" />
+                    <div class="card-article__body">
+                        <h3 class="card-article__title">Interstellar</h3>
+                        <p class="card-article__text">
+                            The film gives unprecedented visibility to female
+                            scientists with the characters of Murphy Cooper and
+                            Amelia Brand, raising questions about representation
+                            and role models.
+                        </p>
+                        <a class="btn btn--secondary" href="/interstellar-en.html">
+                            Learn more
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card-article">
+                    <img class="card-article__img" src="/assets/img/card-hubert-reeves.jpg"
+                        alt="Cover of Hubert Reeves’ book about the Universe" />
+                    <div class="card-article__body">
+                        <h3 class="card-article__title">
+                            Hubert Reeves’ book
+                        </h3>
+                        <p class="card-article__text">
+                            “Petite Histoire de la matière et de l’Univers” offers
+                            a poetic introduction to the history of the cosmos,
+                            linking scientific explanations and philosophical
+                            questions.
+                        </p>
+                        <a class="btn btn--secondary" href="/hubert-reeves-en.html">
+                            Learn more
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Articles -->
+        <section class="section section--article section--center">
+            <a class="btn btn--primary" href="/articles-en.html">
+                Find all our articles here
+            </a>
+        </section>
+
+        <!-- Glossary -->
+        <section class="section section--article">
+            <h2 class="section__title">Glossary</h2>
+            <p>
+                Some words on this site can be a bit technical, but no
+                worries&nbsp;: the glossary page gathers the terms marked
+                with an asterisk (*) and explains them in simple language.
+            </p>
+            <p class="section__actions">
+                <a class="btn btn--primary" href="/glossary-en.html">
+                    Glossary page
+                </a>
+            </p>
+        </section>
+
+        <!-- Other projects -->
+        <section class="section section--article">
+            <h2 class="section__title">Other projects</h2>
+            <p>
+                You can also discover the other projects created by the TP
+                group on a dedicated page.
+            </p>
+            <p class="section__actions">
+                <a class="btn btn--primary" href="/other-projects-en.html">
+                    Other projects
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner section--wrapper">
+            <div class="footer__brand">
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+                <p class="footer__site-name">Étoiles oubliées</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <h2 class="footer__title">NAVIGATION</h2>
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item">
+                        <a class="footer__link" href="/index-en.html">HOME</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/articles-en.html">
+                            ARTICLES
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/about-en.html">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/contact-en.html">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/glossary-en.html">
+                            GLOSSARY
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="footer__infos">
+                <h2 class="footer__title">CONTACT</h2>
+                <p>
+                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                        lilian.maitre@edu.univ-fcomte.fr
+                    </a>
+                </p>
+                <p class="footer__author">
+                    Maitre<br />
+                    Lilian<br />
+                    MMi1_B2
+                </p>
+            </address>
+        </div>
+
+        <p class="footer__legal">
+            Project completed in 2025 as part of an educational exercise at
+            the
+            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                MMi department in Montbéliard
+            </a>
+            .
+        </p>
+    </footer>
+</body>
+</html>
