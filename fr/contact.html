@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contactez l’équipe du projet Étoiles oubliées pour poser vos questions, partager des informations supplémentaires ou proposer des améliorations." />
+    <title>Contact — Étoiles oubliées</title>
+
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="/">
+            <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+        </a>
+
+        <p class="header__lang">
+            <button class="header__lang-btn" type="button">FR/EN</button>
+        </p>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Accueil</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/articles.html">Articles</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/a-propos.html">À propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="/contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper wrapper--article">
+        <header class="section section--article section--center">
+            <h1 class="section__title">Contact</h1>
+            <p class="section__chapo">
+                Vous souhaitez en savoir plus sur Vera Rubin ou sur notre
+                projet&nbsp;? Vous avez des informations supplémentaires à
+                partager ou des idées pour améliorer le site&nbsp;?
+            </p>
+            <p>
+                N’hésitez pas à nous écrire&nbsp;! Nous serons ravis de
+                répondre à vos questions et de recevoir vos suggestions.
+            </p>
+        </header>
+
+        <section class="section section--article section--form" aria-labelledby="contactTitle">
+            <header class="section__header">
+                <h2 class="section__title" id="contactTitle">
+                    Nous contacter
+                </h2>
+            </header>
+
+            <form class="form-contact" action="#" method="post" novalidate>
+                <fieldset class="form-contact__fieldset">
+                    <legend class="form-contact__legend">
+                        Votre identité
+                    </legend>
+
+                    <div class="form-contact__group">
+                        <label class="form-contact__label" for="nom">Nom</label>
+                        <input class="form-contact__input" type="text" id="nom" name="nom" autocomplete="family-name"
+                            placeholder="Nom" />
+                    </div>
+
+                    <div class="form-contact__group">
+                        <label class="form-contact__label" for="prenom">
+                            Prénom
+                        </label>
+                        <input class="form-contact__input" type="text" id="prenom" name="prenom"
+                            autocomplete="given-name" placeholder="Prénom" />
+                    </div>
+                </fieldset>
+
+                <div class="form-contact__group">
+                    <label class="form-contact__label" for="email">
+                        Email
+                    </label>
+                    <input class="form-contact__input" type="email" id="email" name="email" autocomplete="email"
+                        placeholder="ex : monnom@example.com" required />
+                </div>
+
+                <div class="form-contact__group">
+                    <label class="form-contact__label" for="sujet">
+                        Sujet
+                    </label>
+                    <input class="form-contact__input" type="text" id="sujet" name="sujet" />
+                </div>
+
+                <div class="form-contact__group">
+                    <label class="form-contact__label" for="message">
+                        Message
+                    </label>
+                    <textarea class="form-contact__textarea" id="message" name="message" rows="6"></textarea>
+                </div>
+
+                <p class="form-contact__actions">
+                    <button class="btn btn--secondary" type="submit">
+                        Envoyer
+                    </button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner section--wrapper">
+            <div class="footer__brand">
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+                <p class="footer__site-name">Étoiles oubliées</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="Navigation pied de page">
+                <h2 class="footer__title">NAVIGATION</h2>
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item">
+                        <a class="footer__link" href="/">ACCUEIL</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/articles.html">ARTICLES</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/a-propos.html">À PROPOS</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/contact.html">CONTACT</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/glossaire.html">GLOSSAIRE</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="footer__infos">
+                <h2 class="footer__title">CONTACT</h2>
+                <p>
+                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                        lilian.maitre@edu.univ-fcomte.fr
+                    </a>
+                </p>
+                <p class="footer__author">
+                    Maitre<br />
+                    Lilian<br />
+                    MMi1_B2
+                </p>
+            </address>
+        </div>
+
+        <p class="footer__legal">
+            projet réalisé en 2025 dans le cadre d’un exercice pédagogique
+            au
+            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                département MMi de Montbéliard
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
