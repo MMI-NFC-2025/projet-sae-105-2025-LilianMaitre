@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
@@ -28,6 +22,22 @@
     <script type="module" src="/src/js/script.js"></script>
     </head>
     
+    <body>
+        <header class="header">
+            <a class="header__link" href="/index-en.html">
+                <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+            </a>
+    
+            <p class="header__lang">
+                <a class="header__lang-btn" href="/vera-rubin.html">FR/EN</a>
+            </p>
+    
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+                <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+                <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+            </button>
+
     <body>
         <header class="header">
             <a class="header__link" href="/index-en.html">
@@ -196,6 +206,65 @@
             </p>
         </section>
     </main>
-
+    <footer class="footer">
+        <div class="footer__inner section--wrapper">
+            <div class="footer__brand">
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+                <p class="footer__site-name">Étoiles oubliées</p>
+            </div>
+    
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <h2 class="footer__title">NAVIGATION</h2>
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item">
+                        <a class="footer__link" href="/index-en.html">HOME</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/articles-en.html">
+                            ARTICLES
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/about-en.html">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/contact-en.html">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/glossary-en.html">
+                            GLOSSARY
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <address class="footer__infos">
+                <h2 class="footer__title">CONTACT</h2>
+                <p>
+                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                        lilian.maitre@edu.univ-fcomte.fr
+                    </a>
+                </p>
+                <p class="footer__author">
+                    Maitre<br />
+                    Lilian<br />
+                    MMi1_B2
+                </p>
+            </address>
+        </div>
+    
+        <p class="footer__legal">
+            Project completed in 2025 as part of an educational exercise at
+            the
+            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                MMi department in Montbéliard
+            </a>
+            .
+        </p>
+    </footer>
 </body>
 </html>
