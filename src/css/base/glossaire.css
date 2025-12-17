@@ -1,0 +1,24 @@
+.glossary {
+    margin: 1.5rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.glossary__entry {
+    position: relative;
+}
+
+.glossary__term {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.glossary__def {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: #fff;
+}
