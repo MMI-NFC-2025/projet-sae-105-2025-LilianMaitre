@@ -1,0 +1,45 @@
+.contact-form__row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form__label {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--blanc);
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+    border: none;
+    background: #808080;
+    color: var(--blanc);
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: 0.9rem;
+}
+
+.contact-form__input::placeholder {
+    color: #e6e6e6;
+}
+
+.contact-form__textarea {
+    resize: vertical;
+}
+
+.contact-form__legend {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--blanc);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form__submit {
+    margin-top: 0.5rem;
+}
