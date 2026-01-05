@@ -7,7 +7,9 @@
 @import "./base/autres-projets.css";
 @import "./base/glossaire.css";
 @import "./base/cards-recos.css";
+@import "./base/cardsmenu.css";
 @import "/src/css/components/hero.css";
+@import "./components/boutons.css";
 
 html {
     background: transparent;

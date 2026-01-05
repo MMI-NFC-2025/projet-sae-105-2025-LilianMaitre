@@ -1,0 +1,34 @@
+/* Bouton large arrondi style call-to-action */
+.btn-wide {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 2.2rem;
+    background: #f9a476;
+    color: var(--blanc);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.btn-wide:hover {
+    background: #f7945c;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.btn-wide:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-wide:focus-visible {
+    outline: 2px solid #ffe0c8;
+    outline-offset: 3px;
+}
