@@ -10,6 +10,7 @@
 @import "./base/cardsmenu.css";
 @import "/src/css/components/hero.css";
 @import "./components/boutons.css";
+@import "./components/décoration.css";
 
 html {
     background: transparent;

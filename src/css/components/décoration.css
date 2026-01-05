@@ -1,0 +1,9 @@
+.hero__deco1 {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    margin: 2rem 0 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
