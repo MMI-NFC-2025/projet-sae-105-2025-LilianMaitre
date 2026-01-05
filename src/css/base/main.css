@@ -155,7 +155,7 @@ p {
 .article-figure__img {
     position: relative;
     width: 100%;
-    max-width: 200px;
+    max-width: 260px;
     border-radius: 18px;
     z-index: 4;
     display: block;
@@ -234,7 +234,7 @@ p {
 }
 
 .article-figure--wide .article-figure__img {
-    width: min(750px, 90vw);
+    width: min(940px, 98vw);
     max-width: none;
     border-radius: 18px;
     z-index: 2;
