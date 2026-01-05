@@ -1,3 +1,36 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+}
+
+.section {
+    padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.section--wrapper {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+
+.section:first-of-type {
+    padding-top: clamp(4rem, 9vw, 6rem);
+}
+
+.section__title {
+    margin: 0 0 0.75rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: var(--text-2xl);
+    line-height: 1.2;
+    color: #fff !important;
+}
+
+.section__chapo {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: var(--text-xs);
+    font-weight: 400;
 }
