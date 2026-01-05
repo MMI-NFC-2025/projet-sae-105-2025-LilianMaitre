@@ -197,7 +197,7 @@
 .article-figure--hero4 .article-figure__caption {
     position: absolute;
     left: 16px;
-    bottom: 12px;
+    bottom: -35px;
     margin: 0;
     text-align: left;
     color: var(--orange);
