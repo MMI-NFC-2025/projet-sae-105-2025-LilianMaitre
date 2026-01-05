@@ -207,9 +207,23 @@ p {
     height: 60px;
 }
 
+.article-figure__star--wide-tr {
+    top: -12px;
+    right: -5px;
+    width: 40px;
+    height: 40px;
+}
+
+.article-figure__star--wide-bl {
+    bottom: 30px;
+    left: -15px;
+    width: 35px;
+    height: 42px;
+}
+
 .article-figure__frame--wide {
     position: absolute;
-    top: -3%;
+    top: -2%;
     left: 1%;
     right: auto;
     width: clamp(320px, 18vw, 190px);
