@@ -1,18 +1,22 @@
 /* Bouton large arrondi style call-to-action */
 .btn-wide {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.95rem 2.2rem;
+    width: min(90vw, 250px);
+    min-height: 96px;
+    padding: 1.1rem 1.75rem;
     background: #f9a476;
     color: var(--blanc);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 1.1;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: var(--text-2xl);
+    line-height: 1.2;
     border: none;
-    border-radius: 18px;
+    border-radius: 16px;
     text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
     transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }

@@ -91,6 +91,12 @@
     margin-top: 2rem;
 }
 
+.articles__cta {
+    display: flex;
+    justify-content: center;
+    margin: 1.75rem auto 0;
+}
+
 @media (max-width: 520px) {
     .card-menu {
         width: min(296px, calc(100% - 100px));
