@@ -34,3 +34,16 @@ p {
     font-size: var(--text-xs);
     font-weight: 400;
 }
+
+.article-header {
+    text-align: center;
+}
+
+.footer__title {
+    margin: 0 0 0.75rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: var(--text-m);
+    line-height: 1.2;
+    color: #fff !important;
+}
