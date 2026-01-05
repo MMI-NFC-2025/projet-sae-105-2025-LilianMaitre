@@ -36,7 +36,7 @@
 .article-figure--hero2 .article-figure__lines--hero2 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: -8%;
     width: 120%;
     max-width: 900px;
     transform: translate(-50%, -50%) scaleX(-1);
@@ -138,4 +138,82 @@
     margin-top: 0.4rem;
     color: var(--orange);
     text-align: left;
+}
+
+/* Hero styles for article 4 */
+.article-figure--hero4 {
+    width: min(880px, 94vw);
+    margin: 2.25rem auto 2rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    gap: 0.4rem;
+    padding: 0;
+    background: transparent;
+}
+
+.article-figure--hero4 .article-figure__frame {
+    top: 17%;
+    left: 2%;
+    right: auto;
+    width: 90%;
+    height: 88%;
+    background: var(--orange);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.article-figure--hero4 .article-figure__img {
+    width: min(700px, 86vw);
+    max-width: none;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    object-position: center 55%;
+    position: relative;
+    top: 4px;
+    left: -2px;
+    border-radius: 20px;
+    z-index: 4;
+}
+
+.article-figure--hero4 .article-figure__lines--hero4 {
+    position: absolute;
+    top: 46%;
+    left: 55%;
+    width: 130%;
+    max-width: 1020px;
+    transform: translate(-50%, -50%) scale(-1, -1);
+    z-index: 2;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.article-figure--hero4 .article-figure__lines--hero4 img {
+    width: 100%;
+    display: block;
+}
+
+.article-figure--hero4 .article-figure__caption {
+    position: absolute;
+    left: 16px;
+    bottom: 12px;
+    margin: 0;
+    text-align: left;
+    color: var(--orange);
+    z-index: 5;
+}
+
+.article-figure--hero4 .article-figure__star--wide-tl {
+    top: -14px;
+    left: -12px;
+    width: 44px;
+    height: 44px;
+}
+
+.article-figure--hero4 .article-figure__star--wide-tr {
+    top: -14px;
+    right: -12px;
+    width: 44px;
+    height: 44px;
 }
