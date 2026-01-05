@@ -3,6 +3,12 @@ body {
     font-weight: 300;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 p {
     font-weight: 300;
 }
@@ -29,6 +35,12 @@ p {
     color: #fff !important;
 }
 
+.section__title--h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text-m);
+    font-weight: 700;
+}
+
 .section__chapo {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: var(--text-xs);
@@ -39,11 +51,201 @@ p {
     text-align: center;
 }
 
-.footer__title {
-    margin: 0 0 0.75rem;
+.wrapper--article {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+
+.article-header__title {
+    margin: 0 0 1rem;
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    line-height: 1.05;
+    color: #fff;
+}
+
+.article-header__kicker,
+.article-header__intro {
+    max-width: 640px;
+    margin: 0 auto 1.25rem;
+}
+
+.article-figure {
+    position: relative;
+    width: min(240px, 78vw);
+    margin: 1.75rem auto 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.article-figure__bg {
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.article-figure__bg img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 18px;
+    display: block;
+}
+
+.article-figure__bg {
+    top: -6%;
+    right: -4%;
+    width: 70%;
+    z-index: 1;
+}
+
+.article-figure__lines {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 220%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.article-figure__lines img {
+    width: 100%;
+    max-width: 960px;
+    display: block;
+    opacity: 0.95;
+}
+
+
+.article-figure::before {
+    top: -22px;
+    left: -18px;
+}
+
+.article-figure::after {
+    bottom: -22px;
+    right: -6px;
+}
+
+.article-figure__frame {
+    position: absolute;
+    top: -4%;
+    right: 2%;
+    width: 60%;
+    height: 62%;
+    background: var(--orange);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.article-figure__frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+}
+
+
+.article-figure__img {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 18px;
+    z-index: 4;
+    display: block;
+}
+
+.article-figure__caption {
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
+    margin: 0;
+    text-align: left;
+    color: var(--orange);
     font-weight: 400;
-    font-size: var(--text-m);
-    line-height: 1.2;
-    color: #fff !important;
+}
+
+.article-figure--wide {
+    width: min(900px, 96vw);
+    margin: 3rem auto 1rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    gap: 0.5rem;
+}
+
+.article-figure--wide::before,
+.article-figure__star {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: none;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.article-figure__star--tl {
+    top: -22px;
+    left: -18px;
+}
+
+.article-figure__star--br {
+    bottom: -22px;
+    right: -6px;
+}
+
+.article-figure__star--tr {
+    top: -10px;
+    right: -8px;
+    width: 42px;
+    height: 60px;
+}
+
+.article-figure__frame--wide {
+    position: absolute;
+    top: -3%;
+    left: 1%;
+    right: auto;
+    width: clamp(320px, 18vw, 190px);
+    height: clamp(200px, 18vw, 170px);
+    background: var(--orange);
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.article-figure--wide .article-figure__img {
+    width: min(750px, 90vw);
+    max-width: none;
+    border-radius: 18px;
+    z-index: 2;
+}
+
+.article-figure--wide .article-figure__caption {
+    position: static;
+    left: auto;
+    bottom: auto;
+    margin: 0.35rem 0 0;
+    width: 100%;
+    text-align: left;
+    color: var(--orange);
+}
+
+.u-highlight--text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: var(--text-xs);
+    color: var(--orange);
+    font-weight: 400;
+}
+
+.u-link-highlight {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: var(--text-xs);
+    color: var(--orange);
+    font-weight: 400;
 }
