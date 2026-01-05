@@ -1,3 +1,48 @@
+/* Base button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.65rem 1.15rem;
+    background: #f9a476;
+    color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.1;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f7945c;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+
+.btn:focus-visible {
+    outline: 2px solid #ffe0c8;
+    outline-offset: 3px;
+}
+
+/* Secondary sizing for forms */
+.btn--secondary {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
 /* Bouton large arrondi style call-to-action */
 .btn-wide {
     display: flex;

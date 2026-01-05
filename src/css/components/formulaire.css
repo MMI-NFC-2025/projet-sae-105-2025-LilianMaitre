@@ -1,0 +1,70 @@
+/* Contact form layout and fields */
+.section--form {
+    width: min(500px, 90vw);
+    margin: 0 auto;
+}
+
+.form-contact {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.form-contact__fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.form-contact__legend {
+    margin: 0 0 0.4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-contact__group {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.form-contact__label {
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-contact__input,
+.form-contact__textarea {
+    width: 100%;
+    background: #7a7a7a;
+    border: none;
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.form-contact__textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.form-contact__input::placeholder,
+.form-contact__textarea::placeholder {
+    color: #dadada;
+}
+
+.form-contact__input:focus,
+.form-contact__textarea:focus {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
+}
+
+.form-contact__actions {
+    margin: 0;
+}
+
+.form-contact__actions .btn {
+    width: fit-content;
+}

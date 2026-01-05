@@ -12,6 +12,7 @@
 @import "/src/css/components/hero.css";
 @import "./components/boutons.css";
 @import "./components/décoration.css";
+@import "./components/formulaire.css";
 
 html {
     background: transparent;
