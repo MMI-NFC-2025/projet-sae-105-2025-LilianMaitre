@@ -6,3 +6,9 @@
 @import "./base/autres-projets.css";
 @import "./base/glossaire.css";
 @import "./base/cards-recos.css";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
