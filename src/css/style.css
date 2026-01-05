@@ -6,9 +6,26 @@
 @import "./base/autres-projets.css";
 @import "./base/glossaire.css";
 @import "./base/cards-recos.css";
+@import "/src/css/components/hero.css";
+
+html {
+    background: transparent;
+}
 
 html,
 body {
     margin: 0;
     padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--noir);
+    color: var(--blanc);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

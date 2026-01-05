@@ -1,0 +1,115 @@
+.hero {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    isolation: isolate;
+    background: transparent;
+    min-height: 25vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--noir);
+    z-index: 0;
+}
+
+.hero__media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 1;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+    filter: grayscale(100%);
+    display: block;
+}
+
+.stars-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.stars-overlay img {
+    width: 110%;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    bottom: -3%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}
+
+
+.hero__deco,
+.stars-overlay img {
+    z-index: 15 !important;
+    bottom: -20% !important;
+    /* Visible */
+    opacity: 1 !important;
+}
+
+.hero,
+.hero__media,
+.stars-overlay {
+    overflow: visible !important;
+}
+
+.hero__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+    padding: 1.5rem;
+    color: var(--blanc);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    z-index: 4;
+    transform: translateY(-6%);
+}
+
+.hero__kicker {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: var(--text-xl);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.hero__title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: var(--text-xl);
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .hero__deco {
+        bottom: -8%;
+        width: 110%;
+    }
+
+    .hero__content {
+        padding: 1rem;
+        transform: translateY(-4%);
+    }
+}

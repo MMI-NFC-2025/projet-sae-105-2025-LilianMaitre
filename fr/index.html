@@ -34,31 +34,31 @@
         <a class="header__link" href="/">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
         </a>
-    
+
         <p class="header__lang">
             <button class="header__lang-btn" type="button">FR/EN</button>
         </p>
-    
+
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
         </button>
-    
+
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
-        
+
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
                     <a class="menu__link" href="/index.html">Accueil</a>
                 </li>
-        
+
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
                         aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-        
+
                     <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
                             <a class="menu__sub-link" href="/fr/article1.html">
@@ -87,7 +87,7 @@
                         </li>
                     </ul>
                 </li>
-        
+
                 <li class="menu__item">
                     <a class="menu__link" href="/fr/frise.html">Frise des Matilda</a>
                 </li>
@@ -107,7 +107,7 @@
                     <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
                 </li>
             </ul>
-        
+
             <p class="menu__legal">
                 projet réalisé en 2025 dans le cadre d’un exercice pédagogique
                 au
@@ -122,23 +122,19 @@
 
     <main>
         <!-- Hero Vera Rubin -->
-        <section class="hero hero--etoiles">
-            <div class="hero__media">
-                <img class="hero__img" src="/assets/img/vera-rubin-hero.jpg"
-                    alt="Portrait de Vera Rubin devant un ciel étoilé" />
-                <div class="hero__frame"></div>
+        <section class="hero">
+            <div class="stars-overlay">
+                <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco">
             </div>
-
+            <div class="hero__media">
+                <img src="/assets/img/hero.webp" alt="Vera Rubin" class="hero__img">
+            </div>
             <div class="hero__content">
-                <p class="hero__kicker">Étoiles oubliées</p>
-                <h1 class="hero__title">
-                    Vera Rubin<br />
-                    <span class="u-highlight">
-                        Le regard qui a changé la science
-                    </span>
-                </h1>
+                <h2 class="hero__kicker">Vera Rubin</h2>
+                <h1 class="hero__title">Le regard qui a changé la science</h1>
             </div>
         </section>
+
 
         <!-- Introduction -->
         <section class="section section--wrapper">
@@ -342,7 +338,7 @@
                 <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
-    
+
             <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
@@ -363,7 +359,7 @@
                     </li>
                 </ul>
             </nav>
-    
+
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
                 <p>
@@ -378,7 +374,7 @@
                 </p>
             </address>
         </div>
-    
+
         <p class="footer__legal">
             projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
             <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
