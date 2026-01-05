@@ -29,31 +29,31 @@
         <a class="header__link" href="/">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
         </a>
-    
+
         <p class="header__lang">
             <button class="header__lang-btn" type="button">FR/EN</button>
         </p>
-    
+
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
         </button>
-    
+
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
-    
+
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
                     <a class="menu__link" href="/index.html">Accueil</a>
                 </li>
-    
+
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
                         aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-    
+
                     <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
                             <a class="menu__sub-link" href="/fr/article1.html">
@@ -82,7 +82,7 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li class="menu__item">
                     <a class="menu__link" href="/fr/frise.html">Frise des Matilda</a>
                 </li>
@@ -102,7 +102,7 @@
                     <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
                 </li>
             </ul>
-    
+
             <p class="menu__legal">
                 projet réalisé en 2025 dans le cadre d’un exercice pédagogique
                 au
@@ -111,7 +111,7 @@
                 </a>
             </p>
         </nav>
-    
+
     </header>
 
     <main class="wrapper wrapper--article">
@@ -135,9 +135,16 @@
 
         <!-- Image + légende -->
         <section class="section section--article">
-            <figure class="article-figure">
-                <div class="article-figure__frame"></div>
-                <img class="article-figure__img" src="/assets/img/article-litterature-book.jpg"
+            <figure class="article-figure article-figure--wide article-figure--hero2">
+                <img class="article-figure__star article-figure__star--wide-tr" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--wide-bl" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <div class="article-figure__frame article-figure__frame--wide" aria-hidden="true"></div>
+                <div class="article-figure__lines article-figure__lines--hero2" aria-hidden="true">
+                    <img src="/assets/img/lignes rotation.webp" alt="" />
+                </div>
+                <img class="article-figure__img" src="/assets/img/lecture.webp"
                     alt="Personne lisant un livre, vue rapprochée sur les pages" />
                 <figcaption class="article-figure__caption">
                     Image Unsplash

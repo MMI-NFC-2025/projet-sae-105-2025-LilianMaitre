@@ -1,0 +1,66 @@
+/* Hero-specific styles for articles */
+.article-figure--hero2 {
+    width: min(820px, 92vw);
+    margin: 2rem auto 2rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    background: transparent;
+    border-radius: 16px;
+    overflow: visible;
+}
+
+.article-figure--hero2 .article-figure__frame--wide {
+    display: block;
+    position: absolute;
+    top: -2%;
+    left: -2%;
+    width: 85%;
+    height: 70%;
+    background: var(--orange);
+    border-radius: 18px;
+    z-index: 1;
+}
+
+.article-figure--hero2 .article-figure__img {
+    width: min(760px, 92vw);
+    max-width: none;
+    border-radius: 18px;
+    z-index: 3;
+}
+
+.article-figure--hero2 .article-figure__lines--hero2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    max-width: 900px;
+    transform: translate(-50%, -50%) scaleX(-1);
+    z-index: 2;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.article-figure--hero2 .article-figure__lines--hero2 img {
+    width: 100%;
+    display: block;
+}
+
+.article-figure--hero2 .article-figure__caption {
+    display: none;
+}
+
+.article-figure--hero2 .article-figure__star--wide-tr {
+    top: -12px;
+    right: -8px;
+    width: 44px;
+    height: 44px;
+}
+
+.article-figure--hero2 .article-figure__star--wide-bl {
+    bottom: -10px;
+    left: -8px;
+    width: 44px;
+    height: 44px;
+}
