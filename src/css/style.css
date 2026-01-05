@@ -13,6 +13,7 @@
 @import "./components/boutons.css";
 @import "./components/décoration.css";
 @import "./components/formulaire.css";
+@import "./components/persosfrise.css";
 
 html {
     background: transparent;

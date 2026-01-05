@@ -26,6 +26,22 @@ p {
     padding-top: clamp(4rem, 9vw, 6rem);
 }
 
+.section--tight-top {
+    padding-top: clamp(0rem, 0.5vw, 0.5rem);
+}
+
+.section.section--tight-top:first-of-type {
+    padding-top: clamp(0rem, 0.5vw, 0.5rem);
+}
+
+.section--frise-intro .article-header {
+    margin-bottom: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.section--frise-intro p {
+    margin-top: clamp(1rem, 3vw, 1.6rem);
+}
+
 .section__title {
     margin: 0 0 0.75rem;
     font-family: "Montserrat", sans-serif;
@@ -292,10 +308,10 @@ p {
     border: 0;
 }
 
-.form-contact__legend{
-    font-family : "Montserrat", sans-serif;
+.form-contact__legend {
+    font-family: "Montserrat", sans-serif;
 }
 
-.form-contact__label{
-    font-family : "montserrat", sans-serif;
+.form-contact__label {
+    font-family: "montserrat", sans-serif;
 }
