@@ -80,6 +80,9 @@
     font-size: 0.9rem;
     max-width: 32rem;
     margin-inline: auto;
+    color: #fff;
+    display: block;
+    padding: 0 1.25rem 2rem;
 }
 
 .footer__title,
