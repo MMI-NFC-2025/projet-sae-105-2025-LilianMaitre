@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Vera Rubin, pioneering astrophysicist whose work on galaxy rotation curves revealed dark matter and transformed our understanding of the Universe." />
+        content="Portrait de Vera Rubin, astrophysicienne pionnière dont les travaux ont révélé l’existence de la matière noire et marqué l’histoire des femmes en sciences." />
     <title>Vera Rubin — Étoiles oubliées</title>
 
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
         rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
 
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
@@ -25,12 +27,12 @@
 
 <body>
     <header class="header">
-        <a class="header__link" href="/index-en.html">
+        <a class="header__link" href="/en/index.html">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
         </a>
     
         <p class="header__lang">
-            <a class="header__lang-btn" href="/index.html">FR/EN</a>
+            <a class="header__lang-btn" href="/fr/index.html">FR/EN</a>
         </p>
     
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
@@ -41,104 +43,138 @@
     
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
+    
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link" href="/index-en.html">Home</a>
+                    <a class="menu__link" href="/en/index.html">Home</a>
                 </li>
+    
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                        aria-controls="menuArticlesEn" id="btnArticlesEn">
+                        aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-                    <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
+    
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/vera-rubin-en.html">
+                            <a class="menu__sub-link" href="/en/article1.html">
                                 Vera Rubin
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/women-literature-en.html">
+                            <a class="menu__sub-link" href="/en/article2.html">
                                 Women &amp; literature
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/popularisation-en.html">
-                                Popularisation
+                            <a class="menu__sub-link" href="/en/article3.html">
+                                Popularising theory
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/interstellar-en.html">
-                                Interstellar
+                            <a class="menu__sub-link" href="/en/article4.html">
+                                Interstellar &amp; women
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/hubert-reeves-en.html">
+                            <a class="menu__sub-link" href="/en/article5.html">
                                 Hubert Reeves’ book
                             </a>
                         </li>
                     </ul>
                 </li>
+    
                 <li class="menu__item">
-                    <a class="menu__link" href="/timeline-en.html">
-                        Matilda timeline
-                    </a>
+                    <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/gallery-en.html">Gallery</a>
+                    <a class="menu__link" href="/en/recos.html">Gallery</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact-en.html">Contact</a>
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/about-en.html">About us</a>
+                    <a class="menu__link" href="/en/about.html">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/other-projects-en.html">
-                        Other projects
-                    </a>
+                    <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/glossary-en.html">Glossary</a>
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
                 </li>
             </ul>
+    
+            <p class="menu__legal">
+                Project completed in 2025 as part of an educational
+                exercise at the
+                <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                    MMi department in Montbéliard
+                </a>
+            </p>
         </nav>
+    
     </header>
 
-        <!-- Portrait -->
+    <main class="wrapper wrapper--article">
+        <!-- En-tête article -->
+        <header class="article-header">
+            <h1 class="article-header__title">
+                Vera<br />
+                <span class="article-header__title--strong">RUBIN</span>
+            </h1>
+            <p class="article-header__intro">
+                A pioneering astrophysicist, Vera Rubin revolutionised our
+                understanding of the universe by revealing the existence of
+                dark matter. Discover the journey of a committed woman,
+                a tireless mentor and a symbol of the fight against the invisibility
+                of women in science.
+
+            </p>
+        </header>
+
+        <!-- Bloc portrait + encadré -->
         <section class="section section--article">
             <figure class="article-figure">
-                <div class="article-figure__frame"></div>
-                <img class="article-figure__img" src="/assets/img/article-vera-portrait-en.jpg"
-                    alt="Illustration of Vera Rubin surrounded by planets and galaxies" />
+                <img class="article-figure__star article-figure__star--tl" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--br" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--tr" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <div class="article-figure__frame" aria-hidden="true"></div>
+                <div class="article-figure__lines" aria-hidden="true">
+                    <img src="/assets/img/lignes rotation.webp" alt="" />
+                </div>
+                <img class="article-figure__img" src="/assets/img/verarubin.webp"
+                    alt="Portrait illustré de Vera Rubin sur un fond d’objets astronomiques" />
+                <figcaption class="article-figure__caption">
+                    Vera Rubin
+                </figcaption>
             </figure>
-        </section>
 
-        <!-- Biographie -->
-        <section class="section section--article">
             <h2 class="section__title section__title--h3">
-                Vera Rubin, pioneer of astronomy and explorer of the
-                Universe’s mysteries
+                Vera Rubin, pioneer of astronomy and
+                explorer of the mysteries of the Universe
             </h2>
-            <p>
-                Born on 23 July 1928 in Philadelphia, Vera Cooper Rubin
-                developed a passion for the stars at the age of twelve,
-                encouraged by her father, who helped her build her first
-                telescope. In a scientific world dominated by men, she still
-                chose to study astronomy.
+
+            <p class="article__text">
+                Born on 23 July 1928 in Philadelphia, Vera Cooper Rubin developed a
+                passion for the stars at the age of 12, encouraged by her
+                father, who helped her build her first telescope. Despite the
+                pressures and doubts she encountered in a male-dominated scientific world,
+                she pursued her higher education
+                at Vassar College, the only university that accepted
+                women in astronomy at the time.
             </p>
-            <p>
-                She completed her studies at Vassar College, one of the rare
-                institutions that accepted women in astronomy at the time,
-                then defended a thesis on the distribution of galaxies under
-                the supervision of physicist George Gamow. From the very
-                start of her career, her sense of observation and ambition
-                for fundamental research stood out.
-            </p>
-            <p>
-                Throughout her life, Vera Rubin often found herself as the
-                only woman in research teams and had to juggle her work with
-                family life, raising four children while pursuing her
-                scientific projects.
+            <p class="article__text">
+                Her academic career, crowned by a thesis on the
+                distribution of galaxies under the supervision of physicist George
+                Gamow, revealed her keen sense of observation and ambition
+                for fundamental research at an early stage. With her determination,
+                Vera Rubin overcame many obstacles: she was often
+                the only woman in her collaborations and sometimes had to
+                adjust her research schedule to care for
+                her four children.
             </p>
         </section>
 
@@ -147,20 +183,21 @@
             <h2 class="section__title section__title--h3">
                 Pioneering studies in the face of adversity
             </h2>
-            <p>
-                From the 1960s onwards, Rubin carried out major observing
-                campaigns at Kitt Peak and then at Mount Palomar Observatory,
-                which was still largely closed to women. By measuring the
-                rotation speed of stars in the outer regions of galaxies, she
-                noticed that they moved just as fast as those nearer the
-                centre.
+
+            <p class="article__text">
+                From the 1960s onwards, Vera Rubin conducted major observations
+                at the Kitt Peak telescope, then at the Mount Palomar Observatory,
+                which was then off-limits to most women. Her
+                work on the rotational speed of stars at the edge
+                of galaxies revealed the existence of an invisible mass,
+                dark matter, which explains why galaxies do not rotate
+                as predicted by classical laws.
             </p>
-            <p>
-                This result contradicted classical laws and revealed the
-                presence of an invisible mass now known as dark matter, whose
-                gravity holds galaxies together. The discovery was
-                revolutionary and turned dark matter into a central topic in
-                modern cosmology.
+            <p class="article__text">
+                Her research was revolutionary! Dark matter,
+                now a central topic in cosmology, makes up the majority
+                of the mass of the universe and opened up a new field of
+                scientific research.
             </p>
         </section>
 
@@ -169,116 +206,149 @@
             <h2 class="section__title section__title--h3">
                 The impact of the Matilda effect on her career
             </h2>
-            <p>
-                Despite the strength of her results and their worldwide
-                impact, Vera Rubin never received the Nobel Prize and did not
-                benefit from the same honours as her male colleagues. She has
-                therefore become an emblematic example of the Matilda effect,
-                the erasure of women from scientific history.
+
+            <p class="article__text">
+                Despite the evidence and
+                <strong class="u-highlight--text">global impact</strong>
+                of her results, Vera Rubin did not receive the
+                <strong class="u-highlight--text">Nobel Prize</strong> nor the
+                honors accorded to several male colleagues. She
+                thus embodies
+                <strong class="u-highlight--text">the "Matilda effect"*</strong>,
+                which describes the erasure of women in scientific memory.
             </p>
-            <p>
-                Beyond her discoveries, Rubin left a deep mark through her
-                humility and generosity. She cared more about the progress of
-                science than about awards and often said that the greatest
-                compliment was that her data continued to be used by other
-                researchers.
+            <p class="article__text">
+                Beyond her discoveries, she stands out for her
+                <strong class="u-highlight--text">personality</strong> and
+                <strong class="u-highlight--text">generosity</strong> towards
+                future generations. Humble, she cared more about the progress
+                of science than personal recognition, stating that the greatest
+                compliment is that her data continue to serve researchers.
             </p>
-            <p>
-                As a mentor, she strongly supported young women who wanted to
-                become astronomers, writing recommendation letters herself
-                and following their careers closely. Astronomer Sandra Moore
-                Faber later described her as “a guiding light for a whole
-                generation of women astronomers”.
+            <p class="article__text">
+                Vera Rubin also stood out as a mentor, particularly
+                to young women wishing to pursue astronomy.
+                She wrote numerous letters of recommendation and
+                actively supported the careers of her female students. One
+                of them,
+                <strong class="u-highlight--text">Sandra Moore Faber</strong>,
+                became a major figure and described Rubin as "a light that guided a generation of women astronomers."
+            </p>
+            <p class="article__text">
+                Her commitment to openness and diversity is evident
+                in her public speeches, such as
+                <strong class="u-highlight--text">her speech at Berkeley</strong>
+                where she reminds that "Science is competitive, demanding,
+                but also imaginative, fertile, exhilarating," encouraging
+                everyone to persevere with curiosity.
             </p>
         </section>
 
-        <!-- Héritage -->
+        <!-- Héritage + observatoire -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
                 A legacy engraved in science
             </h2>
-            <p>
-                Recognition did eventually come, with the National Medal of
-                Science in 1993 and the Gold Medal of the Royal Astronomical
-                Society in 1996. Today one of the world’s largest observatory
-                projects bears her name: the Vera C. Rubin Observatory in
-                Chile, designed to revolutionise our view of the sky.
-            </p>
-            <p>
-                Rubin passed away in 2016, leaving behind a more open
-                scientific community and a better‑understood Universe. Her
-                legacy continues to inspire anyone interested in science,
-                equity and curiosity.
-            </p>
-        </section>
 
-        <!-- Image observatoire + CTA frise -->
-        <section class="section section--article section--cta">
-            <figure class="article-figure">
-                <div class="article-figure__frame article-figure__frame--wide"></div>
-                <img class="article-figure__img" src="/assets/img/article-vera-observatory-en.jpg"
-                    alt="The Vera Rubin Observatory at sunset" />
+            <p class="article__text">
+                Recognition finally came, notably with
+                the
+                <a href="https://fr.wikipedia.org/wiki/National_Medal_of_Science" class="u-link-highlight">National
+                    Medal of Science</a>
+                awarded by Bill Clinton in 1993 and
+                the Gold Medal of the Royal Astronomical Society in 1996.<br>
+                As proof of her lasting influence, one of the world's largest
+                observatories today bears her name: the <a href="https://www.lsst.org" class="u-link-highlight">Vera Rubin Observatory</a>, inaugurated in Chile in 2020, which will revolutionise
+                the observation of the cosmos for decades to come.
+            </p>
+            <p class="article__text">
+                Her name and legacy are thus engraved in the collective memory
+                of the scientific community as a symbol
+                of emancipation, commitment and excellence for all
+                future generations. <br>
+                
+                Vera Rubin passed away in 2016, leaving behind a
+                more open scientific community, a better understood universe
+                and a permanent invitation to continue the quest
+                for the invisible. Her legacy is a source of inspiration for
+                anyone passionate about science, equity and curiosity.
+            </p>
+
+            <figure class="article-figure article-figure--wide">
+                <img class="article-figure__star article-figure__star--wide-tr" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--wide-bl" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <div class="article-figure__frame article-figure__frame--wide" aria-hidden="true"></div>
+                <img class="article-figure__img" src="/assets/img/observatoire.webp"
+                    alt="Coucher de soleil sur le Vera Rubin Observatory au Chili" />
+                <figcaption class="article-figure__caption">
+                    Vera Rubin Observatory – Chile
+                </figcaption>
             </figure>
-
-            <div class="section section--article">
-                <h2 class="section__title section__title--h3">
-                    Matilda timeline
-                </h2>
-                <p>
-                    Unfortunately, Vera Rubin is not the only woman to have
-                    been overlooked in the history of science. To go further,
-                    explore our short timeline dedicated to other “Matildas”,
-                    women whose work has long remained in the shadows.
-                </p>
-                <p class="section__actions">
-                    <a class="btn btn--primary" href="/timeline-en.html">
-                        Check our timeline
-                    </a>
-                </p>
-            </div>
         </section>
+
+        <!-- Matilda timeline -->
+        <section class="section section--article section--cta">
+            <h2 class="section__title section__title--h3">
+                Matilda timeline
+            </h2>
+
+            <p class="article__text">
+                Unfortunately, Vera Rubin is not the only woman to have been
+                overlooked in the history of science...
+            </p>
+            <p class="article__text">
+                If you would like to find out more, we invite you to take a look at
+                a short timeline featuring important women who have been
+                overlooked in the history of science:
+            </p>
+
+            <p class="section__footer">
+                <a class="btn-wide" href="/frise-matilda.html">
+                    Check our timeline
+                </a>
+            </p>
+        </section>
+
+        <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
+
     </main>
 
     <footer class="footer">
         <div class="footer__inner section--wrapper">
             <div class="footer__brand">
-                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
-
-            <nav class="footer__nav" aria-label="Footer navigation">
+    
+            <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
                     <li class="footer__item">
-                        <a class="footer__link" href="/index-en.html">HOME</a>
+                        <a class="footer__link" href="/en/index.html">HOME</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/articles-en.html">
-                            ARTICLES
-                        </a>
+                        <a class="footer__link" href="/en/article1.html">ARTICLES</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/about-en.html">
-                            ABOUT US
-                        </a>
+                        <a class="footer__link" href="/en/about.html">ABOUT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/contact-en.html">
-                            CONTACT
-                        </a>
+                        <a class="footer__link" href="/en/contact.html">CONTACT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/glossary-en.html">
-                            GLOSSARY
-                        </a>
+                        <a class="footer__link" href="/en/glossary.html">GLOSSARY</a>
                     </li>
                 </ul>
             </nav>
-
+    
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
-                <p>
-                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                <p> IUT de Montbéliard Département MMi <br>
+                    4 pl. Lucien Tharradin <br>
+                    25200 Montbéliard <br>
+                    <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
                         lilian.maitre@edu.univ-fcomte.fr
                     </a>
                 </p>
@@ -289,16 +359,15 @@
                 </p>
             </address>
         </div>
-
+    
         <p class="footer__legal">
-            Project completed in 2025 as part of an educational exercise at
-            the
+            Project completed in 2025 as part of an educational
+            exercise at the
             <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
                 MMi department in Montbéliard
             </a>
-            .
         </p>
     </footer>
-</body>
-
-</html>
+    </body>
+    
+    </html>
