@@ -404,3 +404,9 @@ p {
     font-size: var(--text-sm);
     color: var(--blanc);
 }
+
+.form-contact__input{
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
+}

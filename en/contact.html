@@ -23,12 +23,12 @@
         </head>
 <body>
     <header class="header">
-        <a class="header__link" href="/index-en.html">
+        <a class="header__link" href="/en/index.html">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
         </a>
     
         <p class="header__lang">
-            <a class="header__lang-btn" href="/index.html">FR/EN</a>
+            <a class="header__lang-btn" href="/en/index.html">FR/EN</a>
         </p>
     
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
@@ -39,163 +39,186 @@
     
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
+    
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link" href="/index-en.html">Home</a>
+                    <a class="menu__link" href="/en/index.html">Home</a>
                 </li>
+    
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                        aria-controls="menuArticlesEn" id="btnArticlesEn">
+                        aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-                    <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
+    
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/vera-rubin-en.html">
+                            <a class="menu__sub-link" href="/en/article1.html">
                                 Vera Rubin
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/women-literature-en.html">
+                            <a class="menu__sub-link" href="/en/article2.html">
                                 Women &amp; literature
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/popularisation-en.html">
-                                Popularisation
+                            <a class="menu__sub-link" href="/en/article3.html">
+                                Popularising theory
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/interstellar-en.html">
-                                Interstellar
+                            <a class="menu__sub-link" href="/en/article4.html">
+                                Interstellar &amp; women
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/hubert-reeves-en.html">
+                            <a class="menu__sub-link" href="/en/article5.html">
                                 Hubert Reeves’ book
                             </a>
                         </li>
                     </ul>
                 </li>
+    
                 <li class="menu__item">
-                    <a class="menu__link" href="/timeline-en.html">
-                        Matilda timeline
-                    </a>
+                    <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/gallery-en.html">Gallery</a>
+                    <a class="menu__link" href="/en/recos.html">Gallery</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact-en.html">Contact</a>
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/about-en.html">About us</a>
+                    <a class="menu__link" href="/en/about.html">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/other-projects-en.html">
-                        Other projects
-                    </a>
+                    <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/glossary-en.html">Glossary</a>
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
                 </li>
             </ul>
+    
+            <p class="menu__legal">
+                Project completed in 2025 as part of an educational
+                exercise at the
+                <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                    MMi department in Montbéliard
+                </a>
+            </p>
         </nav>
+    
     </header>
 
-    <main class="wrapper wrapper--contact">
-        <header class="section section--center">
+    <main class="wrapper wrapper--article">
+        <header class="section section--article section--center">
             <h1 class="section__title">Contact</h1>
-            <p class="section__intro">
+            <p class="section__chapo">
                 Would you like to learn more about Vera Rubin or our project?
-                Would you like to contribute additional information to our
-                website? Please do not hesitate to contact us! We would be
-                delighted to answer your questions or receive your suggestions
-                for improving the website.
+                Would you like to contribute additional information to
+                our website?
+            </p>
+            <p class="section__chapo">
+                Please do not hesitate to contact us!
+                We would be delighted to answer your questions or receive
+                your suggestions for improving the website.
             </p>
         </header>
     
-        <section class="section section--contact">
-            <h2 class="section__title section__title--h3">Contact us</h2>
+        <section class="section section--article section--form" aria-labelledby="contactTitle">
+            <header class="section__header">
+                <h2 class="section__title" id="contactTitle">
+                    Contact us
+                </h2>
+            </header>
     
-            <form class="contact-form" action="mailto:lilian.maitre@edu.univ-fcomte.fr" method="post">
-                <fieldset class="contact-form__group">
-                    <legend class="contact-form__legend">Your identity</legend>
+            <form class="form-contact" action="#" method="post" novalidate>
+                <fieldset class="form-contact__fieldset">
+                    <legend class="form-contact__legend">
+                        Your Identity
+                    </legend>
     
-                    <div class="contact-form__row">
-                        <label class="contact-form__label" for="lastName">Name</label>
-                        <input class="contact-form__input" type="text" id="lastName" name="lastName"
-                            autocomplete="family-name" required />
+                    <div class="form-contact__group">
+                        <label class="form-contact__label" for="nom">Last Name</label>
+                        <input class="form-contact__input" type="text" id="nom" name="nom" autocomplete="family-name"
+                            placeholder="Last Name" />
                     </div>
     
-                    <div class="contact-form__row">
-                        <label class="contact-form__label" for="firstName">First name</label>
-                        <input class="contact-form__input" type="text" id="firstName" name="firstName"
-                            autocomplete="given-name" required />
+                    <div class="form-contact__group">
+                        <label class="form-contact__label" for="prenom">
+                            First Name
+                        </label>
+                        <input class="form-contact__input" type="text" id="prenom" name="prenom" autocomplete="given-name"
+                            placeholder="First Name" />
                     </div>
                 </fieldset>
     
-                <div class="contact-form__row">
-                    <label class="contact-form__label" for="email">Email</label>
-                    <input class="contact-form__input" type="email" id="email" name="email"
-                        placeholder="ex : myname@example.com" autocomplete="email" required />
+                <div class="form-contact__group">
+                    <label class="form-contact__label" for="email">
+                        Email
+                    </label>
+                    <input class="form-contact__input" type="email" id="email" name="email" autocomplete="email"
+                        placeholder="ex : myname@example.com" required />
                 </div>
     
-                <div class="contact-form__row">
-                    <label class="contact-form__label" for="subject">Subject</label>
-                    <input class="contact-form__input" type="text" id="subject" name="subject" required />
+                <div class="form-contact__group">
+                    <label class="form-contact__label" for="sujet">
+                        Subject
+                    </label>
+                    <input class="form-contact__input" type="text" id="sujet" name="sujet" />
                 </div>
     
-                <div class="contact-form__row">
-                    <label class="contact-form__label" for="message">Message</label>
-                    <textarea class="contact-form__textarea" id="message" name="message" rows="6" required></textarea>
+                <div class="form-contact__group">
+                    <label class="form-contact__label" for="message">
+                        Message
+                    </label>
+                    <textarea class="form-contact__textarea" id="message" name="message" rows="6"></textarea>
                 </div>
     
-                <button class="btn btn--primary contact-form__submit" type="submit">
-                    Send
-                </button>
+                <p class="form-contact__actions">
+                    <button class="btn btn--secondary" type="submit">
+                        Send
+                    </button>
+                </p>
             </form>
         </section>
+        <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
     </main>
     <footer class="footer">
         <div class="footer__inner section--wrapper">
             <div class="footer__brand">
-                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
     
-            <nav class="footer__nav" aria-label="Footer navigation">
+            <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
                     <li class="footer__item">
-                        <a class="footer__link" href="/index-en.html">HOME</a>
+                        <a class="footer__link" href="/en/index.html">HOME</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/articles-en.html">
-                            ARTICLES
-                        </a>
+                        <a class="footer__link" href="/en/article1.html">ARTICLES</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/about-en.html">
-                            ABOUT US
-                        </a>
+                        <a class="footer__link" href="/en/about.html">ABOUT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/contact-en.html">
-                            CONTACT
-                        </a>
+                        <a class="footer__link" href="/en/contact.html">CONTACT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/glossary-en.html">
-                            GLOSSARY
-                        </a>
+                        <a class="footer__link" href="/en/glossary.html">GLOSSARY</a>
                     </li>
                 </ul>
             </nav>
     
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
-                <p>
-                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                <p> IUT of Montbéliard MMi Department <br>
+                    4 pl. Lucien Tharradin <br>
+                    25200 Montbéliard <br>
+                    <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
                         lilian.maitre@edu.univ-fcomte.fr
                     </a>
                 </p>
@@ -208,13 +231,13 @@
         </div>
     
         <p class="footer__legal">
-            Project completed in 2025 as part of an educational exercise at
-            the
+            Project completed in 2025 as part of an educational
+            exercise at the
             <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
                 MMi department in Montbéliard
             </a>
-            .
         </p>
     </footer>
-</body>
-</html>
+    </body>
+    
+    </html>
