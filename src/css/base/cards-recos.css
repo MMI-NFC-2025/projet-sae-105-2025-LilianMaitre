@@ -100,7 +100,7 @@
 .media-card__link a {
     font-size: 0.75rem;
     color: var(--orange);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .card-media__img {
