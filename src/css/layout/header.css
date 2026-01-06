@@ -55,13 +55,19 @@
     border: none;
     background: transparent;
     color: var(--blanc);
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 0.75rem;
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-m);
     letter-spacing: 0.04em;
+    text-decoration: none;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     transition: background 0.2s;
+}
+
+/* Force the current language marker to appear bold */
+.header__lang-btn strong {
+    font-weight: 700;
 }
 
 .header__lang-btn:hover {
