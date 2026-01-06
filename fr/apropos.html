@@ -30,32 +30,31 @@
         <a class="header__link" href="/">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
         </a>
-    
+
         <p class="header__lang">
             <button class="header__lang-btn" type="button">FR/EN</button>
         </p>
-    
+
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
         </button>
-    
+
         <nav class="header__menu menu" id="mainNav" hidden>
-            <img src="/assets/icons/logo-etoiles.svg" href="/fr/index.html" alt="Logo Étoiles oubliées menu" />
             <p class="menu__brand">Étoiles Oubliées</p>
-    
+
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
                     <a class="menu__link" href="/fr/index.html">Accueil</a>
                 </li>
-    
+
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
                         aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-    
+
                     <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
                             <a class="menu__sub-link" href="/fr/article1.html">
@@ -84,7 +83,7 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li class="menu__item">
                     <a class="menu__link" href="/fr/frise.html">Frise des Matilda</a>
                 </li>
@@ -104,7 +103,7 @@
                     <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
                 </li>
             </ul>
-    
+
             <p class="menu__legal">
                 projet réalisé en 2025 dans le cadre d’un exercice pédagogique
                 au
@@ -113,34 +112,36 @@
                 </a>
             </p>
         </nav>
-    
+
     </header>
     <main class="wrapper wrapper--article">
-        <section class="section section--article section--center">
-            <h1 class="section__title">
+        <section class="section section--article section--center section--tight-top">
+            <h1 class="section__title article-header__title">
                 À propos<br />
                 de nous
             </h1>
 
-            <p>
-                Ce site met en lumière le parcours remarquable de
-                <strong>Vera Rubin</strong>, astrophysicienne pionnière qui a
-                bouleversé notre vision de l’Univers en révélant
-                l’existence de la matière noire, tout en luttant pour la
-                reconnaissance des femmes en sciences.
-            </p>
-            <p>
-                Notre objectif&nbsp;: partager son histoire, valoriser les
-                figures féminines scientifiques et faciliter l’accès à des
-                contenus pédagogiques, inspirants et documentés pour tous.
-            </p>
+            <div class="about-intro">
+                <p class="section__chapo">
+                    Ce site met en lumière le parcours remarquable de
+                    <strong>Vera Rubin</strong>, astrophysicienne pionnière qui a
+                    bouleversé notre vision de l’Univers en révélant
+                    l’existence de la matière noire, tout en luttant pour la
+                    reconnaissance des femmes en sciences.
+                </p>
+                <p class="section__chapo">
+                    Notre objectif&nbsp;: partager son histoire, valoriser les
+                    figures féminines scientifiques et faciliter l’accès à des
+                    contenus pédagogiques, inspirants et documentés pour tous.
+                </p>
+            </div>
         </section>
 
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
                 Qui suis‑je&nbsp;?
             </h2>
-            <p>
+            <p class="section__chapo">
                 Étudiant en Métiers du Multimédia et de l’Internet à l’IUT
                 Nord Franche‑Comté, passionné par la vulgarisation
                 scientifique, l’égalité en sciences et la création de
@@ -154,7 +155,7 @@
             <h2 class="section__title section__title--h3">
                 Pourquoi ce site&nbsp;?
             </h2>
-            <p>
+            <p class="section__chapo">
                 Pour faire connaître les contributions souvent invisibles
                 des femmes en sciences, briser les stéréotypes et offrir des
                 ressources accessibles sur l’astronomie, la physique, la
@@ -166,7 +167,7 @@
 
         <section class="section section--article">
             <h2 class="section__title section__title--h3">Contact</h2>
-            <p>
+            <p class="section__chapo">
                 Pour toute question, remarque ou initiative de
                 collaboration, rendez‑vous sur
                 <a class="u-link-highlight" href="/fr/contact.html">
@@ -177,59 +178,59 @@
         </section>
     </main>
 
-<footer class="footer">
-    <div class="footer__inner section--wrapper">
-        <div class="footer__brand">
-            <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
-            <p class="footer__site-name">Étoiles oubliées</p>
+    <footer class="footer">
+        <div class="footer__inner section--wrapper">
+            <div class="footer__brand">
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+                <p class="footer__site-name">Étoiles oubliées</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="Navigation pied de page">
+                <h2 class="footer__title">NAVIGATION</h2>
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item">
+                        <a class="footer__link" href="/fr/index.html">ACCUEIL</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/fr/article1.html">ARTICLES</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/fr/apropos.html">À PROPOS</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/fr/contact.html">CONTACT</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="footer__infos">
+                <h2 class="footer__title">CONTACT</h2>
+                <p> IUT de Montbéliard Département MMi <br>
+                    4 pl. Lucien Tharradin <br>
+                    25200 Montbéliard <br>
+                    <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                        lilian.maitre@edu.univ-fcomte.fr
+                    </a>
+                </p>
+                <p class="footer__author">
+                    Maitre<br />
+                    Lilian<br />
+                    MMi1_B2
+                </p>
+            </address>
         </div>
 
-        <nav class="footer__nav" aria-label="Navigation pied de page">
-            <h2 class="footer__title">NAVIGATION</h2>
-            <ul class="footer__list u-list-unstyled">
-                <li class="footer__item">
-                    <a class="footer__link" href="/fr/index.html">ACCUEIL</a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="/fr/article1.html">ARTICLES</a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="/fr/apropos.html">À PROPOS</a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="/fr/contact.html">CONTACT</a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="/fr/glossaire.html">GLOSSAIRE</a>
-                </li>
-            </ul>
-        </nav>
-
-        <address class="footer__infos">
-            <h2 class="footer__title">CONTACT</h2>
-            <p> IUT de Montbéliard Département MMi <br>
-                4 pl. Lucien Tharradin <br>
-                25200 Montbéliard <br>
-                <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
-                    lilian.maitre@edu.univ-fcomte.fr
-                </a>
-            </p>
-            <p class="footer__author">
-                Maitre<br />
-                Lilian<br />
-                MMi1_B2
-            </p>
-        </address>
-    </div>
-
-    <p class="footer__legal">
-        projet réalisé en 2025 dans le cadre d’un exercice pédagogique
-        au
-        <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
-            département MMi de Montbéliard
-        </a>
-    </p>
-</footer>
+        <p class="footer__legal">
+            projet réalisé en 2025 dans le cadre d’un exercice pédagogique
+            au
+            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                département MMi de Montbéliard
+            </a>
+        </p>
+    </footer>
 </body>
 
 </html>

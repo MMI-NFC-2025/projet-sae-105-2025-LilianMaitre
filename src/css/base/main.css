@@ -17,6 +17,14 @@ p {
     padding: clamp(2.5rem, 6vw, 4rem) 0;
 }
 
+.section.section--article {
+    padding: clamp(1.75rem, 4.5vw, 3rem) 0;
+}
+
+.section.section--article:first-of-type {
+    padding-top: clamp(2.5rem, 6vw, 4rem);
+}
+
 .section--wrapper {
     width: min(1100px, 92vw);
     margin: 0 auto;
@@ -42,6 +50,16 @@ p {
     margin-top: clamp(1rem, 3vw, 1.6rem);
 }
 
+.section--center {
+    text-align: center;
+}
+
+.about-intro {
+    margin: 1.25rem auto 0;
+    max-width: 720px;
+    text-align: left;
+}
+
 .section__title {
     margin: 0 0 0.75rem;
     font-family: "Montserrat", sans-serif;
@@ -58,9 +76,9 @@ p {
 }
 
 .section__chapo {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: var(--text-xs);
-    font-weight: 400;
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
 }
 
 .article-header {
@@ -85,6 +103,16 @@ p {
 .article-header__intro {
     max-width: 640px;
     margin: 0 auto 1.25rem;
+}
+
+.article__list {
+    list-style: disc;
+    margin: 1.25rem 0 1.75rem 0;
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.85rem;
+    justify-items: start;
+    text-align: left;
 }
 
 .article-figure {
@@ -268,7 +296,7 @@ p {
 
 .u-highlight--text {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
     color: var(--orange);
     font-weight: 400;
 }
@@ -320,4 +348,34 @@ p {
 .glossary__term {
     font-family: "Montserrat", sans-serif;
     font-size: var(--text-2xl);
+}
+
+.article-header__intro {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
+}
+
+.article__text {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
+}
+
+.accueil__text {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
+}
+
+.card-media__desc {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
+}
+
+.form-contact__label {
+    font-family: Helvetica, system-ui, sans-serif;
+    font-size: var(--text-sm);
+    color: var(--blanc);
 }
