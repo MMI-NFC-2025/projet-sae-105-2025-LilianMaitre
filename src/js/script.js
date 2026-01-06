@@ -1,11 +1,74 @@
+const menuBtn = document.querySelector(".header__menu-btn");
+const mainNav = document.getElementById("mainNav");
 const btnArticles = document.getElementById("btnArticles");
 const subListArticles = document.getElementById("menuArticles");
+let menuLogo = mainNav ? mainNav.querySelector(".menu__logo") : null;
+
+const ensureMenuLogo = () => {
+    if (!mainNav || menuLogo) return;
+    const link = document.createElement("a");
+    link.className = "menu__logo";
+    link.href = "/";
+    link.setAttribute("aria-label", "Retour à l'accueil");
+
+    const img = document.createElement("img");
+    img.src = "/assets/icons/logo-etoiles.svg";
+    img.alt = "Logo Étoiles oubliées";
+
+    link.append(img);
+    const brand = mainNav.querySelector(".menu__brand");
+    if (brand) {
+        mainNav.insertBefore(link, brand);
+    } else {
+        mainNav.prepend(link);
+    }
+    menuLogo = link;
+};
+
+const toggleMenu = (open) => {
+    if (!menuBtn || !mainNav) return;
+    if (open) ensureMenuLogo();
+    menuBtn.classList.toggle("menu-btn--open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    mainNav.classList.toggle("menu--open", open);
+    mainNav.setAttribute("aria-hidden", String(!open));
+    document.body.classList.toggle("menu-open", open);
+    if (!open && btnArticles && subListArticles) {
+        btnArticles.setAttribute("aria-expanded", "false");
+        subListArticles.hidden = true;
+        subListArticles.classList.remove("is-open");
+    }
+};
+
+if (menuBtn && mainNav) {
+    mainNav.hidden = false;
+    mainNav.setAttribute("aria-hidden", "true");
+    menuBtn.addEventListener("click", () => {
+        const willOpen = !mainNav.classList.contains("menu--open");
+        toggleMenu(willOpen);
+    });
+
+    mainNav.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target instanceof HTMLElement && target.closest("a")) {
+            toggleMenu(false);
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            toggleMenu(false);
+        }
+    });
+}
 
 if (btnArticles && subListArticles) {
     btnArticles.addEventListener("click", () => {
         const isOpen = btnArticles.getAttribute("aria-expanded") === "true";
-        btnArticles.setAttribute("aria-expanded", String(!isOpen));
-        subListArticles.hidden = isOpen;
+        const next = !isOpen;
+        btnArticles.setAttribute("aria-expanded", String(next));
+        subListArticles.hidden = !next;
+        subListArticles.classList.toggle("is-open", next);
     });
 }
 

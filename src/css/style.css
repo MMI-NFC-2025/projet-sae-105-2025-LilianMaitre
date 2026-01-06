@@ -1,5 +1,6 @@
 @import "./utils/variables.css";
 @import "./base/main.css";
+@import "./base/menu.css";
 @import "./layout/header.css";
 @import "./layout/footer.css";
 @import "./base/formulaire-contact.css";

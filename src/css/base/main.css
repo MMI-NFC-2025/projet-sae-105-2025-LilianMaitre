@@ -152,7 +152,7 @@ p {
 .article-figure__frame {
     position: absolute;
     top: -4%;
-    right: 2%;
+    right: -5%;
     width: 60%;
     height: 62%;
     background: var(--orange);
