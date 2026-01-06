@@ -1,10 +1,11 @@
 .card-menu {
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr;
     background: var(--bleu);
     color: var(--blanc);
     border-radius: 18px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 18px 32px rgba(0, 0, 0, 0.35);
     width: min(296px, calc(100% - 100px));
     max-width: 296px;
@@ -12,6 +13,49 @@
     height: auto;
     margin: 0 auto;
     border: none;
+}
+
+.card-menu::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: -14px;
+    width: 34px;
+    height: 34px;
+    background: url('/assets/img/scintiller.webp') center/contain no-repeat;
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.card-menu--women::before {
+    right: auto;
+    left: -14px;
+    top: -12px;
+    transform: rotate(12deg);
+}
+
+.card-menu--vulgarisation::before {
+    top: auto;
+    bottom: -14px;
+    right: -12px;
+    left: auto;
+    transform: rotate(-12deg);
+}
+
+.card-menu--interstellar::before {
+    top: auto;
+    bottom: -14px;
+    left: -12px;
+    right: auto;
+    transform: rotate(10deg);
+}
+
+.card-menu--hubert::before {
+    top: -14px;
+    right: -14px;
+    left: auto;
+    transform: rotate(-8deg);
 }
 
 .card-menu__media {
@@ -89,6 +133,40 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+}
+
+.section--articles {
+    position: relative;
+}
+
+.section__stars {
+    position: absolute;
+    top: -1.4rem;
+    left: 50%;
+    display: flex;
+    gap: 0.7rem;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.section__star {
+    width: 26px;
+    height: 26px;
+    display: block;
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+}
+
+.section__star--1 {
+    transform: rotate(-8deg);
+}
+
+.section__star--2 {
+    transform: rotate(6deg);
+}
+
+.section__star--3 {
+    transform: rotate(-4deg);
 }
 
 .articles__cta {
