@@ -1,117 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Vera Rubin, pioneering astrophysicist whose work on galaxy rotation curves revealed dark matter and transformed our understanding of the Universe." />
     <title>Vera Rubin — Étoiles oubliées</title>
-    
+
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
         rel="stylesheet" />
-    
+
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
-    </head>
-    
-    <body>
-        <header class="header">
-            <a class="header__link" href="/en/index.html">
-                <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
-            </a>
-        
-            <p class="header__lang">
-                <a class="header__lang-btn" href="/fr/article4.html">FR/EN</a>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="/en/index.html">
+            <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+        </a>
+
+        <p class="header__lang">
+            <a class="header__lang-btn" href="/fr/article4.html">FR/<strong>EN</strong></a>
+        </p>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <p class="menu__brand">Étoiles Oubliées</p>
+
+            <ul class="menu__list u-list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/index.html">Home</a>
+                </li>
+
+                <li class="menu__item menu__item--has-children">
+                    <button class="menu__link menu__link--button" type="button" aria-expanded="false"
+                        aria-controls="menuArticles" id="btnArticles">
+                        Articles
+                    </button>
+
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/en/article1.html">
+                                Vera Rubin
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/en/article2.html">
+                                Women &amp; literature
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/en/article3.html">
+                                Popularising theory
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/en/article4.html">
+                                Interstellar &amp; women
+                            </a>
+                        </li>
+                        <li class="menu__sub-item">
+                            <a class="menu__sub-link" href="/en/article5.html">
+                                Hubert Reeves’ book
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/recos.html">Gallery</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
+                </li>
+            </ul>
+
+            <p class="menu__legal">
+                Project completed in 2025 as part of an educational
+                exercise at the
+                <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                    MMi department in Montbéliard
+                </a>
             </p>
-        
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
-                <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
-                <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
-            </button>
-        
-            <nav class="header__menu menu" id="mainNav" hidden>
-                <p class="menu__brand">Étoiles Oubliées</p>
-        
-                <ul class="menu__list u-list-unstyled">
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/index.html">Home</a>
-                    </li>
-        
-                    <li class="menu__item menu__item--has-children">
-                        <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                            aria-controls="menuArticles" id="btnArticles">
-                            Articles
-                        </button>
-        
-                        <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
-                            <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/en/article1.html">
-                                    Vera Rubin
-                                </a>
-                            </li>
-                            <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/en/article2.html">
-                                    Women &amp; literature
-                                </a>
-                            </li>
-                            <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/en/article3.html">
-                                    Popularising theory
-                                </a>
-                            </li>
-                            <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/en/article4.html">
-                                    Interstellar &amp; women
-                                </a>
-                            </li>
-                            <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/en/article5.html">
-                                    Hubert Reeves’ book
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-        
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/recos.html">Gallery</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/contact.html">Contact</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/about.html">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/glossary.html">Glossary</a>
-                    </li>
-                </ul>
-        
-                <p class="menu__legal">
-                    Project completed in 2025 as part of an educational
-                    exercise at the
-                    <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
-                        MMi department in Montbéliard
-                    </a>
-                </p>
-            </nav>
-        
-        </header>
-    
+        </nav>
+
+    </header>
+
     <main class="wrapper wrapper--article">
         <!-- En-tête article -->
         <header class="article-header">
@@ -123,7 +124,7 @@
                 in science, its limitations and its educational implications.
             </p>
         </header>
-    
+
         <!-- Image Amelia Brand -->
         <section class="section section--article">
             <figure class="article-figure article-figure--wide article-figure--hero4">
@@ -142,13 +143,13 @@
                 </figcaption>
             </figure>
         </section>
-    
+
         <!-- Women scientists at the heart of the scenario -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
                 Women scientists at the heart of the scenario
             </h2>
-    
+
             <p class="article__text">
                 In Christopher Nolan's film ‘Interstellar’, the rehabilitation
                 of female scientists is embodied mainly through the character
@@ -158,11 +159,11 @@
                 relegated to secondary or stereotypical roles.
             </p>
         </section>
-    
+
         <!-- Murphy Cooper -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">Murphy Cooper</h2>
-    
+
             <p class="article__text">
                 Murphy, played by Jessica Chastain as an adult, is
                 a brilliant physicist at NASA. She is not just
@@ -183,11 +184,11 @@
                 in real life, including Vera Rubin.
             </p>
         </section>
-    
+
         <!-- Amelia Brand -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">Amelia Brand</h2>
-    
+
             <p class="article__text">
                 Amelia Brand, played by Anne Hathaway, leads the main space
                 mission. Her role is ambivalent: she embodies
@@ -204,14 +205,14 @@
                 to the pursuit of survival and progress.
             </p>
         </section>
-    
+
         <!-- Impact et limites -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
                 Impact and limitations of representation
                 in Interstellar
             </h2>
-    
+
             <p class="article__text">
                 Interstellar allows a very wide audience to identify with
                 intelligent, passionate female characters who play a decisive role
@@ -228,13 +229,13 @@
                 that still exist, both in fiction and in reality.
             </p>
         </section>
-    
+
         <!-- Bande-annonce + CTA galerie -->
         <section class="section section--article section--cta">
             <h2 class="section__title section__title--h3">
                 Interstellar trailer
             </h2>
-    
+
             <figure class="article-figure article-figure--video">
                 <div class="article-video__embed">
                     <iframe src="https://www.youtube.com/watch?v=zSWdZVtXT7E"
@@ -243,20 +244,20 @@
                         allowfullscreen></iframe>
                 </div>
             </figure>
-    
+
             <p class="article__text">
                 In addition to Interstellar, there are other audiovisual works
                 related to astronomy and the consideration of women. We
                 have listed a few of them in our film/series gallery !
             </p>
-    
+
             <p class="section__footer">
                 <a class="btn-wide" href="/en/recos.html">
                     View the gallery
                 </a>
             </p>
         </section>
-    
+
         <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
     </main>
     <footer class="footer">
@@ -265,7 +266,7 @@
                 <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
-    
+
             <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
@@ -286,7 +287,7 @@
                     </li>
                 </ul>
             </nav>
-    
+
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
                 <p> IUT of Montbéliard MMi Department <br>
@@ -303,7 +304,7 @@
                 </p>
             </address>
         </div>
-    
+
         <p class="footer__legal">
             Project completed in 2025 as part of an educational
             exercise at the
@@ -312,6 +313,6 @@
             </a>
         </p>
     </footer>
-    </body>
-    
-    </html>
+</body>
+
+</html>

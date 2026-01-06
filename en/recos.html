@@ -1,294 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description"
-            content="Vera Rubin, pioneering astrophysicist whose work on galaxy rotation curves revealed dark matter and transformed our understanding of the Universe." />
-        <title>Vera Rubin — Étoiles oubliées</title>
-        
-        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
-            rel="stylesheet" />
-        
-        <link rel="stylesheet" href="/src/css/style.css" />
-        <script type="module" src="/src/js/script.js"></script>
-        </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Vera Rubin, pioneering astrophysicist whose work on galaxy rotation curves revealed dark matter and transformed our understanding of the Universe." />
+    <title>Vera Rubin — Étoiles oubliées</title>
+
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
 </head>
+</head>
+
 <body>
     <header class="header">
-        <a class="header__link" href="/index-en.html">
+        <a class="header__link" href="/en/index.html">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
         </a>
-    
+
         <p class="header__lang">
-            <a class="header__lang-btn" href="/index.html">FR/EN</a>
+            <a class="header__lang-btn" href="/fr/recos.html">FR/<strong>EN</strong></a>
         </p>
-    
+
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
         </button>
-    
+
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
+
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link" href="/fr/recos.html">Home</a>
+                    <a class="menu__link" href="/en/index.html">Home</a>
                 </li>
+
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                        aria-controls="menuArticlesEn" id="btnArticlesEn">
+                        aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-                    <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
+
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/vera-rubin-en.html">
+                            <a class="menu__sub-link" href="/en/article1.html">
                                 Vera Rubin
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/women-literature-en.html">
+                            <a class="menu__sub-link" href="/en/article2.html">
                                 Women &amp; literature
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/popularisation-en.html">
-                                Popularisation
+                            <a class="menu__sub-link" href="/en/article3.html">
+                                Popularising theory
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/interstellar-en.html">
-                                Interstellar
+                            <a class="menu__sub-link" href="/en/article4.html">
+                                Interstellar &amp; women
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/hubert-reeves-en.html">
+                            <a class="menu__sub-link" href="/en/article5.html">
                                 Hubert Reeves’ book
                             </a>
                         </li>
                     </ul>
                 </li>
+
                 <li class="menu__item">
-                    <a class="menu__link" href="/timeline-en.html">
-                        Matilda timeline
-                    </a>
+                    <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/gallery-en.html">Gallery</a>
+                    <a class="menu__link" href="/en/recos.html">Gallery</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact-en.html">Contact</a>
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/about-en.html">About us</a>
+                    <a class="menu__link" href="/en/about.html">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/other-projects-en.html">
-                        Other projects
-                    </a>
+                    <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/glossary-en.html">Glossary</a>
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
                 </li>
             </ul>
-        </nav>
-    </header>
 
-        <main class="wrapper wrapper--gallery">
-            <section class="section section--center">
-                <h1 class="section__title">
-                    Gallery of films/series related to astronomy
-                    and the emancipation of women
-                </h1>
-                <p class="section__intro">
-                    Interstellar is not the only film that gives a voice to women in
-                    astronomy. This page presents a selection of works that combine
-                    space, science and women’s stories, to watch, analyse and
-                    discuss.
-                </p>
-            </section>
-        
-            <section class="section section--gallery">
-        
-                <!-- Card 1 : Hidden Figures -->
-                <article class="media-card">
-                    <h2 class="media-card__title">The figures in the shadows</h2>
-                    <a class="media-card__thumb-link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html"
-                        target="_blank" rel="noreferrer">
-                        <img class="media-card__img" src="/assets/img/gallery-hidden-figures.jpg"
-                            alt="Poster of the film Hidden Figures" />
-                    </a>
-                    <p class="media-card__text">
-                        The extraordinary story of three African‑American scientists
-                        who helped the United States take the lead in the space race by
-                        putting astronaut John Glenn into orbit, after having long been
-                        kept in the shadows by their male colleagues and by a deeply
-                        unequal society.
-                    </p>
-                    <p class="media-card__link">
-                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html" target="_blank" rel="noreferrer">
-                            View the film details
-                        </a>
-                    </p>
-                </article>
-        
-                <!-- Card 2 : Étoile du Nord -->
-                <article class="media-card">
-                    <h2 class="media-card__title">North Star</h2>
-                    <a class="media-card__thumb-link"
-                        href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
-                        target="_blank" rel="noreferrer">
-                        <img class="media-card__img" src="/assets/img/gallery-etoile-nord.jpg"
-                            alt="Visual from the documentary series North Star" />
-                    </a>
-                    <p class="media-card__text">
-                        Five short episodes follow Laurie Rousseau‑Nepton, who leads a
-                        research project at the Canada‑France‑Hawaii Telescope. The
-                        series links her Innu culture, her observational skills and her
-                        work on star formation, offering a powerful, accessible way to
-                        teach astronomy.
-                    </p>
-                    <p class="media-card__link">
-                        <a href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
-                            target="_blank" rel="noreferrer">
-                            Discover the series
-                        </a>
-                    </p>
-                </article>
-        
-                <!-- Card 3 : Gravity -->
-                <article class="media-card">
-                    <h2 class="media-card__title">Gravity</h2>
-                    <a class="media-card__thumb-link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html"
-                        target="_blank" rel="noreferrer">
-                        <img class="media-card__img" src="/assets/img/gallery-gravity.jpg"
-                            alt="Poster of the film Gravity with an astronaut in space" />
-                    </a>
-                    <p class="media-card__text">
-                        During her first mission, Dr Ryan Stone, a medical engineer,
-                        finds herself stranded in space with veteran astronaut Matt
-                        Kowalsky after a catastrophe destroys their shuttle. Cut off
-                        from Earth, she must fight panic and push her limits to try to
-                        return home.
-                    </p>
-                    <p class="media-card__link">
-                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html" target="_blank" rel="noreferrer">
-                            View the film details
-                        </a>
-                    </p>
-                </article>
-        
-                <!-- Card 4 : Proxima -->
-                <article class="media-card">
-                    <h2 class="media-card__title">Proxima</h2>
-                    <a class="media-card__thumb-link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html"
-                        target="_blank" rel="noreferrer">
-                        <img class="media-card__img" src="/assets/img/gallery-proxima.jpg"
-                            alt="Poster of the film Proxima showing an astronaut and her daughter" />
-                    </a>
-                    <p class="media-card__text">
-                        Sarah, a French astronaut, prepares for a year‑long mission in
-                        space. As the only woman in the crew, she must face demanding
-                        training and, above all, the emotional challenge of leaving her
-                        eight‑year‑old daughter behind.
-                    </p>
-                    <p class="media-card__link">
-                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html" target="_blank" rel="noreferrer">
-                            View the film details
-                        </a>
-                    </p>
-                </article>
-        
-                <!-- Card 5 : Chercheuses d’étoiles -->
-                <article class="media-card">
-                    <h2 class="media-card__title">Chercheuses d’étoiles</h2>
-                    <a class="media-card__thumb-link" href="https://www.youtube.com/watch?v=2AO6MCP0AzM" target="_blank"
-                        rel="noreferrer">
-                        <img class="media-card__img" src="/assets/img/gallery-chercheuses-etoiles.jpg"
-                            alt="Thumbnail of the documentary Chercheuses d’étoiles" />
-                    </a>
-                    <p class="media-card__text">
-                        This documentary tells the story of great astronomical
-                        discoveries made by women whose names have often been forgotten
-                        by history, while exploring dark matter and the origins of the
-                        Universe.
-                    </p>
-                    <p class="media-card__link">
-                        <a href="https://www.youtube.com/watch?v=2AO6MCP0AzM" target="_blank" rel="noreferrer">
-                            Watch the documentary
-                        </a>
-                    </p>
-                </article>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__inner section--wrapper">
-                <div class="footer__brand">
-                    <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
-                    <p class="footer__site-name">Étoiles oubliées</p>
-                </div>
-        
-                <nav class="footer__nav" aria-label="Footer navigation">
-                    <h2 class="footer__title">NAVIGATION</h2>
-                    <ul class="footer__list u-list-unstyled">
-                        <li class="footer__item">
-                            <a class="footer__link" href="/index-en.html">HOME</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="/articles-en.html">
-                                ARTICLES
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="/about-en.html">
-                                ABOUT US
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="/contact-en.html">
-                                CONTACT
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="/glossary-en.html">
-                                GLOSSARY
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-        
-                <address class="footer__infos">
-                    <h2 class="footer__title">CONTACT</h2>
-                    <p>
-                        <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
-                            lilian.maitre@edu.univ-fcomte.fr
-                        </a>
-                    </p>
-                    <p class="footer__author">
-                        Maitre<br />
-                        Lilian<br />
-                        MMi1_B2
-                    </p>
-                </address>
-            </div>
-        
-            <p class="footer__legal">
-                Project completed in 2025 as part of an educational exercise at
-                the
-                <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+            <p class="menu__legal">
+                Project completed in 2025 as part of an educational
+                exercise at the
+                <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
                     MMi department in Montbéliard
                 </a>
-                .
             </p>
-        </footer>
+        </nav>
+
+    </header>
+
+<main class="wrapper wrapper--article">
+    <!-- Intro -->
+    <section class="section section--article section--center">
+        <h1 class="section__title">
+            Galerie de films / séries<br />
+            liées à l’astronomie<br />
+            et à l’émancipation<br />
+            des femmes
+        </h1>
+
+        <p class="article__text">
+            Interstellar is not the only film that fights for women
+            in the field of astronomy. Here are several other works that
+            follow this pattern:
+        </p>
+    </section>
+
+    <section class="section section--article section--gallery carousel carousel--recos">
+        <div class="carousel__controls" aria-label="Navigation du carrousel">
+            <button class="carousel__btn" type="button" data-dir="prev">Previous</button>
+            <button class="carousel__btn" type="button" data-dir="next">Next</button>
+        </div>
+
+        <div class="carousel__track" role="list">
+            <!-- Carte : Les figures de l’ombre -->
+            <article class="card-media" role="listitem">
+                <h2 class="card-media__title">Les figures de l’ombre</h2>
+                <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html"
+                    target="_blank" rel="noreferrer">
+                    <img class="card-media__img" src="/assets/img/lesfiguresdel'ombre.webp"
+                        alt="Affiche du film Les figures de l’ombre" />
+                </a>
+                <p class="card-media__source">
+                    <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html" class="u-link-highlight"
+                        target="_blank" rel="noreferrer">
+                        Allociné page
+                    </a>
+                </p>
+                <p class="card-media__desc">
+                    The extraordinary story of three African-American scientists who helped the United States take the lead in the space
+                    race by putting astronaut John Glenn into orbit.
+                    
+                    Kept in the shadows by their male colleagues and in a country plagued by deep inequalities, their long-unknown story is
+                    finally being brought to the screen.
+                </p>
+            </article>
+
+            <!-- Carte : Étoile du Nord -->
+            <article class="card-media" role="listitem">
+                <h2 class="card-media__title">Étoile du Nord</h2>
+                <a class="card-media__link"
+                    href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
+                    target="_blank" rel="noreferrer">
+                    <img class="card-media__img" src="/assets/img/etoiledunord.webp"
+                        alt="Visuel de la série documentaire Étoile du Nord" />
+                </a>
+                <p class="card-media__source">
+                    <a href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
+                        class="u-link-highlight" target="_blank" rel="noreferrer">
+                        Teaching sheet
+                    </a>
+                </p>
+                <p class="card-media__desc">
+                    This multi-episode documentary series follows
+                    astronomer Laurie Rousseau-Nepton, who leads a research project
+                    at the Canada-France-Hawaii Telescope. She combines
+                    sky observation, Innu culture, intergenerational transmission,
+                    and popularization, offering an original perspective on astronomy
+                    and the role of Indigenous women scientists.
+                </p>
+            </article>
+
+            <!-- Carte : Gravity -->
+            <article class="card-media" role="listitem">
+                <h2 class="card-media__title">Gravity</h2>
+                <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html"
+                    target="_blank" rel="noreferrer">
+                    <img class="card-media__img" src="/assets/img/gravity.webp" alt="Affiche du film Gravity" />
+                </a>
+                <p class="card-media__source">
+                    <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html" class="u-link-highlight"
+                        target="_blank" rel="noreferrer">
+                        Allociné page
+                    </a>
+                </p>
+                <p class="card-media__desc">
+                    The film follows Dr. Ryan Stone, an expert in medical engineering,
+                    on her first space mission. After the shuttle is destroyed, she finds herself isolated in space and must survive alone.
+                    Beyond the visual spectacle, the story centers on a female scientist confronted with her fears, loss, and resilience.
+                    
+                    The film is directed by James Cameron, known for his work on Titanic and Avatar.
+                </p>
+            </article>
+
+            <!-- Carte : Proxima -->
+            <article class="card-media" role="listitem">
+                <h2 class="card-media__title">Proxima</h2>
+                <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html"
+                    target="_blank" rel="noreferrer">
+                    <img class="card-media__img" src="/assets/img/proxima.webp" alt="Affiche du film Proxima" />
+                </a>
+                <p class="card-media__source">
+                    <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html" class="u-link-highlight"
+                        target="_blank" rel="noreferrer">
+                        Allociné page
+                    </a>
+                </p>
+                <p class="card-media__desc">
+                    The feature film follows Sarah, a French astronaut who is
+                    preparing for a year-long space mission while managing her
+                    relationship with her eight-year-old daughter. The film addresses
+                    mental load, the balance between scientific vocation
+                    and family life, and the place of women in
+                    space programs.
+                </p>
+            </article>
+
+            <!-- Carte : Chercheuses d’étoiles -->
+            <article class="card-media" role="listitem">
+                <h2 class="card-media__title">Chercheuses d’étoiles</h2>
+                <a class="card-media__link" href="https://www.youtube.com/watch?v=2AO6MCP0AzM" target="_blank"
+                    rel="noreferrer">
+                    <img class="card-media__img" src="/assets/img/docu.webp"
+                        alt="Visuel de la série documentaire Chercheuses d’étoiles" />
+                </a>
+                <p class="card-media__source">
+                    <a href="https://www.youtube.com/watch?v=2AO6MCP0AzM" class="u-link-highlight" target="_blank"
+                        rel="noreferrer">
+                        Watch the video
+                    </a>
+                </p>
+                <p class="card-media__desc">
+                    The documentary series “Star Seekers” highlights
+                    the major astronomical discoveries made by
+                    women who have long been forgotten. Between exploring
+                    dark matter, observing the deep sky, and the history of
+                    science, it extends the themes of the Étoiles
+                    oubliées website.
+                </p>
+            </article>
+        </div>
+    </section>
+    <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
+</main>
+    <footer class="footer">
+        <div class="footer__inner section--wrapper">
+            <div class="footer__brand">
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+                <p class="footer__site-name">Étoiles oubliées</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="Navigation pied de page">
+                <h2 class="footer__title">NAVIGATION</h2>
+                <ul class="footer__list u-list-unstyled">
+                    <li class="footer__item">
+                        <a class="footer__link" href="/en/index.html">HOME</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/en/article1.html">ARTICLES</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/en/about.html">ABOUT</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/en/contact.html">CONTACT</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="/en/glossary.html">GLOSSARY</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="footer__infos">
+                <h2 class="footer__title">CONTACT</h2>
+                <p> IUT of Montbéliard MMi Department <br>
+                    4 pl. Lucien Tharradin <br>
+                    25200 Montbéliard <br>
+                    <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                        lilian.maitre@edu.univ-fcomte.fr
+                    </a>
+                </p>
+                <p class="footer__author">
+                    Maitre<br />
+                    Lilian<br />
+                    MMi1_B2
+                </p>
+            </address>
+        </div>
+
+        <p class="footer__legal">
+            Project completed in 2025 as part of an educational
+            exercise at the
+            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                MMi department in Montbéliard
+            </a>
+        </p>
+    </footer>
 </body>
+
 </html>
