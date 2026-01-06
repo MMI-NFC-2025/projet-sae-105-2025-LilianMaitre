@@ -21,31 +21,16 @@
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
     </head>
-    
-    <body>
-        <header class="header">
-            <a class="header__link" href="/index-en.html">
-                <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
-            </a>
-    
-            <p class="header__lang">
-                <a class="header__lang-btn" href="/vera-rubin.html">FR/EN</a>
-            </p>
-    
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
-                <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
-                <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
-            </button>
+
 
     <body>
         <header class="header">
-            <a class="header__link" href="/index-en.html">
+            <a class="header__link" href="/en/index.html">
                 <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
             </a>
         
             <p class="header__lang">
-                <a class="header__lang-btn" href="/index.html">FR/EN</a>
+                <a class="header__lang-btn" href="/en/index.html">FR/EN</a>
             </p>
         
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
@@ -56,215 +41,246 @@
         
             <nav class="header__menu menu" id="mainNav" hidden>
                 <p class="menu__brand">Étoiles Oubliées</p>
+        
                 <ul class="menu__list u-list-unstyled">
                     <li class="menu__item">
-                        <a class="menu__link" href="/index-en.html">Home</a>
+                        <a class="menu__link" href="/en/index.html">Home</a>
                     </li>
+        
                     <li class="menu__item menu__item--has-children">
                         <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                            aria-controls="menuArticlesEn" id="btnArticlesEn">
+                            aria-controls="menuArticles" id="btnArticles">
                             Articles
                         </button>
-                        <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
+        
+                        <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                             <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/vera-rubin-en.html">
+                                <a class="menu__sub-link" href="/en/article1.html">
                                     Vera Rubin
                                 </a>
                             </li>
                             <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/women-literature-en.html">
+                                <a class="menu__sub-link" href="/en/article2.html">
                                     Women &amp; literature
                                 </a>
                             </li>
                             <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/popularisation-en.html">
-                                    Popularisation
+                                <a class="menu__sub-link" href="/en/article3.html">
+                                    Popularising theory
                                 </a>
                             </li>
                             <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/interstellar-en.html">
-                                    Interstellar
+                                <a class="menu__sub-link" href="/en/article4.html">
+                                    Interstellar &amp; women
                                 </a>
                             </li>
                             <li class="menu__sub-item">
-                                <a class="menu__sub-link" href="/hubert-reeves-en.html">
+                                <a class="menu__sub-link" href="/en/article5.html">
                                     Hubert Reeves’ book
                                 </a>
                             </li>
                         </ul>
                     </li>
+        
                     <li class="menu__item">
-                        <a class="menu__link" href="/timeline-en.html">
-                            Matilda timeline
-                        </a>
+                        <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/gallery-en.html">Gallery</a>
+                        <a class="menu__link" href="/en/recos.html">Gallery</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/contact-en.html">Contact</a>
+                        <a class="menu__link" href="/en/contact.html">Contact</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/about-en.html">About us</a>
+                        <a class="menu__link" href="/en/about.html">About</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/other-projects-en.html">
-                            Other projects
-                        </a>
+                        <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/glossary-en.html">Glossary</a>
+                        <a class="menu__link" href="/en/glossary.html">Glossary</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-
-    <main class="wrapper wrapper--article">
-        <p class="article-breadcrumb">Articles</p>
-    
-        <header class="article-header article-header--center">
-            <h1 class="article-header__title">
-                Popularisation of<br />
-                Vera Rubin's theory<br />
-                and further study
-            </h1>
-            <p class="article-header__intro">
-                How did Vera Rubin revolutionise cosmology? Through her study of
-                galaxy rotation, discover dark matter, a central enigma of the
-                modern Universe, still at the heart of major research in
-                astrophysics.
-            </p>
-        </header>
-    
-        <!-- Image + frame -->
-        <section class="section section--article">
-            <figure class="article-figure">
-                <div class="article-figure__frame"></div>
-                <img class="article-figure__img" src="/assets/img/article-popularisation-galaxy.jpg"
-                    alt="A galaxy with many stars and nebulae" />
-            </figure>
-        </section>
-    
-        <!-- Classical laws -->
-        <section class="section section--article">
-            <h2 class="section__title section__title--h3">
-                Classical laws and galactic rotation*
-            </h2>
-            <p>
-                In the 1970s, Vera Rubin focused on how stars revolve around the
-                centre of galaxies, particularly spiral galaxies such as
-                Andromeda. According to classical laws such as Newton’s, stars
-                farther from the centre should rotate more slowly, like planets
-                in the Solar System.
-            </p>
-            <p>
-                However, Rubin and Kent Ford observed a surprising anomaly:
-                stars at the outskirts of galaxies rotate just as fast as those
-                near the centre. The resulting rotation curves are “flat”, while
-                theoretical models predicted a sharp drop with distance.
-            </p>
-        </section>
-    
-        <!-- Invisible matter -->
-        <section class="section section--article">
-            <h2 class="section__title section__title--h3">
-                The existence of invisible matter
-            </h2>
-            <p>
-                To explain this phenomenon, Rubin proposed the existence of a
-                massive but invisible component: dark matter. It cannot be seen
-                directly because it neither emits nor absorbs light, but it
-                exerts a gravitational pull on stars and gas in galaxies.
-            </p>
-            <p>
-                This implies a huge “missing” mass acting like a gravitational
-                glue that prevents galaxies from flying apart under their
-                rotation. Current estimates suggest that dark matter makes up
-                more than 80% of the total mass in the observable Universe.
-            </p>
-        </section>
-    
-        <!-- Current challenges -->
-        <section class="section section--article">
-            <h2 class="section__title section__title--h3">
-                Current challenges in dark matter research
-            </h2>
-            <p>
-                Today, dark matter is a central topic in astrophysics. It has
-                still not been detected directly: its presence is inferred from
-                its effects, but its exact nature remains unknown. Researchers
-                are exploring several hypotheses, including new massive
-                particles that interact only very weakly with light and ordinary
-                matter.
-            </p>
-            <p>
-                Thanks to Vera Rubin’s work, astronomers realised that a large
-                part of the Universe escapes our direct perception. Her research
-                paved the way for modern cosmology, changing our view of the
-                cosmos and launching one of the greatest scientific quests of
-                our time.
-            </p>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__inner section--wrapper">
-            <div class="footer__brand">
-                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
-                <p class="footer__site-name">Étoiles oubliées</p>
-            </div>
-    
-            <nav class="footer__nav" aria-label="Footer navigation">
-                <h2 class="footer__title">NAVIGATION</h2>
-                <ul class="footer__list u-list-unstyled">
-                    <li class="footer__item">
-                        <a class="footer__link" href="/index-en.html">HOME</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="/articles-en.html">
-                            ARTICLES
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="/about-en.html">
-                            ABOUT US
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="/contact-en.html">
-                            CONTACT
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="/glossary-en.html">
-                            GLOSSARY
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <address class="footer__infos">
-                <h2 class="footer__title">CONTACT</h2>
-                <p>
-                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
-                        lilian.maitre@edu.univ-fcomte.fr
+        
+                <p class="menu__legal">
+                    Project completed in 2025 as part of an educational
+                    exercise at the
+                    <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                        MMi department in Montbéliard
                     </a>
                 </p>
-                <p class="footer__author">
-                    Maitre<br />
-                    Lilian<br />
-                    MMi1_B2
-                </p>
-            </address>
-        </div>
+            </nav>
+        
+        </header>
     
-        <p class="footer__legal">
-            Project completed in 2025 as part of an educational exercise at
-            the
-            <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
-                MMi department in Montbéliard
-            </a>
-            .
-        </p>
-    </footer>
-</body>
-</html>
+        <main class="wrapper wrapper--article">
+            <!-- En-tête article -->
+            <header class="article-header">
+                <h1 class="article-header__title">
+                    Popularisation of
+                    Vera Rubin's theory
+                    and
+                    further study
+                </h1>
+                <p class="article-header__intro">
+                    How did Vera Rubin revolutionise cosmology ?
+                    Through her study of galaxy rotation, discover
+                    dark matter: a central enigma of
+                    the modern universe, still at the heart of major research
+                    in astrophysics.
+
+                </p>
+            </header>
+        
+            <!-- Image observatoire -->
+            <section class="section section--article">
+                <figure class="article-figure article-figure--wide article-figure--hero3">
+                    <img class="article-figure__star article-figure__star--wide-tr" src="/assets/img/scintiller.webp" alt=""
+                        aria-hidden="true" />
+                    <img class="article-figure__star article-figure__star--wide-bl" src="/assets/img/scintiller.webp" alt=""
+                        aria-hidden="true" />
+                    <img class="article-figure__star article-figure__star--wide-br" src="/assets/img/scintiller.webp" alt=""
+                        aria-hidden="true" />
+                    <div class="article-figure__frame" aria-hidden="true"></div>
+                    <div class="article-figure__lines article-figure__lines--hero3" aria-hidden="true">
+                        <img src="/assets/img/lignes rotation.webp" alt="" />
+                    </div>
+                    <img class="article-figure__img" src="/assets/img/galaxie.webp"
+                        alt="Vue d’un champ de galaxies et d’amas d’étoiles dans l’Univers profond" />
+                    <figcaption class="article-figure__caption">
+                        Photo taken from the Vera Rubin Observatory
+                    </figcaption>
+                </figure>
+            </section>
+        
+            <!-- Lois classiques -->
+            <section class="section section--article">
+                <h2 class="section__title section__title--h3">
+                    Classical laws and galactic rotation*
+                </h2>
+        
+                <p class="article__text">
+                    In the 1970s, Vera Rubin became interested in how
+                    stars revolve around the centre of galaxies,
+                    particularly in spiral galaxies such as Andromeda.
+                    According to known laws (such as Newton's), stars
+                    furthest from the centre should rotate more slowly than
+                    those near the heart of the galaxy, much like the
+                    planets in the Solar System.
+                </p>
+                <p class="article__text">
+                    In the 1970s, Vera Rubin became interested in how
+                    stars revolve around the centre of galaxies,
+                    particularly in spiral galaxies such as Andromeda.
+                    According to known laws (such as Newton's), stars
+                    furthest from the centre should rotate more slowly than
+                    those near the heart of the galaxy, much like the
+                    planets in the Solar System.
+                </p>
+            </section>
+        
+            <!-- Matière invisible -->
+            <section class="section section--article">
+                <h2 class="section__title section__title--h3">
+                    The existence of invisible matter
+                </h2>
+        
+                <p class="article__text">
+                    To explain this unexpected phenomenon, Rubin proposes
+                    the existence of a massive but invisible mass: dark matter.
+                    This matter cannot be seen directly, as it emits neither
+                    light nor any form of detectable radiation, but
+                    exerts a gravitational influence on the stars and gas
+                    in galaxies.
+                </p>
+                <p class="article__text">
+                    In other words, there must be a huge ‘missing piece’
+                    of mass in the Universe, which acts as a gravitational glue
+                    and prevents galaxies from breaking apart
+                    under the effect of their own rotation. According to estimates,
+                    this dark matter accounts for more than 80% of the
+                    total mass of the visible Universe !
+                </p>
+            </section>
+        
+            <!-- Enjeux actuels -->
+            <section class="section section--article">
+                <h2 class="section__title section__title--h3">
+                    Current challenges in dark matter research
+                </h2>
+        
+                <p class="article__text">
+                    Today, dark matter is a central area of research
+                    in astrophysics. It has not yet been detected directly,
+                    its effects are observed, but its exact nature remains
+                    unknown. Several avenues are being explored, imagining that it
+                    could be new massive particles that interact
+                    only very weakly with light or ordinary matter.
+                </p>
+                <p class="article__text">
+                    In summary, thanks to Vera Rubin, astronomers have become
+                    aware that a large part of the Universe escapes us.
+                    Her work paved the way for modern cosmology:
+                    it changed the way we see the cosmos and launched one
+                    of the great scientific quests of our time.
+                </p>
+            </section>
+            <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner section--wrapper">
+                <div class="footer__brand">
+                    <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
+                    <p class="footer__site-name">Étoiles oubliées</p>
+                </div>
+        
+                <nav class="footer__nav" aria-label="Navigation pied de page">
+                    <h2 class="footer__title">NAVIGATION</h2>
+                    <ul class="footer__list u-list-unstyled">
+                        <li class="footer__item">
+                            <a class="footer__link" href="/en/index.html">HOME</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="/en/article1.html">ARTICLES</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="/en/about.html">ABOUT</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="/en/contact.html">CONTACT</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="/en/glossary.html">GLOSSARY</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <address class="footer__infos">
+                    <h2 class="footer__title">CONTACT</h2>
+                    <p> IUT of Montbéliard MMi Department <br>
+                        4 pl. Lucien Tharradin <br>
+                        25200 Montbéliard <br>
+                        <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                            lilian.maitre@edu.univ-fcomte.fr
+                        </a>
+                    </p>
+                    <p class="footer__author">
+                        Maitre<br />
+                        Lilian<br />
+                        MMi1_B2
+                    </p>
+                </address>
+            </div>
+        
+            <p class="footer__legal">
+                Project completed in 2025 as part of an educational
+                exercise at the
+                <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
+                    MMi department in Montbéliard
+                </a>
+            </p>
+        </footer>
+        </body>
+        
+        </html>
