@@ -10,8 +10,8 @@
 }
 
 .glossary__term {
-    font-family: "Montserrat", system-ui, sans-serif;
-    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text-2xl);
     font-weight: 700;
     color: #fff;
     margin-bottom: 0.25rem;
@@ -21,4 +21,37 @@
     font-family: Helvetica, system-ui, sans-serif;
     font-size: 0.85rem;
     color: #fff;
+}
+
+.section--glossary-hero {
+    background: #000;
+    text-align: center;
+    padding: clamp(0.35rem, 0.5vw, 1rem) 0 clamp(1rem, 2vw, 2rem);
+}
+
+.section--glossary-hero .section__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin: 0 0 1.25rem;
+}
+
+.section--glossary-hero p {
+    color: #fff;
+    margin: 0;
+    max-width: none;
+}
+
+.glossary-hero__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem 1.5rem;
+    align-items: start;
+    justify-items: start;
+    margin: 1rem auto 0;
+    max-width: 1100px;
+    text-align: left;
 }

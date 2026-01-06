@@ -315,3 +315,8 @@ p {
 .form-contact__label {
     font-family: "montserrat", sans-serif;
 }
+
+.glossary__term {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text-2xl);
+}
