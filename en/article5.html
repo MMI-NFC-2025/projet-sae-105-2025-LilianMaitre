@@ -23,12 +23,12 @@
     </head>
 <body>
     <header class="header">
-        <a class="header__link" href="/index-en.html">
+        <a class="header__link" href="/en/index.html">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
         </a>
     
         <p class="header__lang">
-            <a class="header__lang-btn" href="/index.html">FR/EN</a>
+            <a class="header__lang-btn" href="/en/index.html">FR/EN</a>
         </p>
     
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
@@ -39,177 +39,201 @@
     
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
+    
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link" href="/index-en.html">Home</a>
+                    <a class="menu__link" href="/en/index.html">Home</a>
                 </li>
+    
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                        aria-controls="menuArticlesEn" id="btnArticlesEn">
+                        aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-                    <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
+    
+                    <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/vera-rubin-en.html">
+                            <a class="menu__sub-link" href="/en/article1.html">
                                 Vera Rubin
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/women-literature-en.html">
+                            <a class="menu__sub-link" href="/en/article2.html">
                                 Women &amp; literature
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/popularisation-en.html">
-                                Popularisation
+                            <a class="menu__sub-link" href="/en/article3.html">
+                                Popularising theory
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/interstellar-en.html">
-                                Interstellar
+                            <a class="menu__sub-link" href="/en/article4.html">
+                                Interstellar &amp; women
                             </a>
                         </li>
                         <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/hubert-reeves-en.html">
+                            <a class="menu__sub-link" href="/en/article5.html">
                                 Hubert Reeves’ book
                             </a>
                         </li>
                     </ul>
                 </li>
+    
                 <li class="menu__item">
-                    <a class="menu__link" href="/timeline-en.html">
-                        Matilda timeline
-                    </a>
+                    <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/gallery-en.html">Gallery</a>
+                    <a class="menu__link" href="/en/recos.html">Gallery</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact-en.html">Contact</a>
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/about-en.html">About us</a>
+                    <a class="menu__link" href="/en/about.html">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/other-projects-en.html">
-                        Other projects
-                    </a>
+                    <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/glossary-en.html">Glossary</a>
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
                 </li>
             </ul>
+    
+            <p class="menu__legal">
+                Project completed in 2025 as part of an educational
+                exercise at the
+                <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                    MMi department in Montbéliard
+                </a>
+            </p>
         </nav>
+    
     </header>
     <main class="wrapper wrapper--article">
-        <p class="article-breadcrumb">Articles</p>
-    
-        <header class="article-header article-header--center">
+        <!-- En-tête article -->
+        <header class="article-header">
             <h1 class="article-header__title">
-                “A Brief History of<br />
-                Matter and the Universe”
+                «&nbsp;Petite histoire de la matière et de l’Univers&nbsp;»
             </h1>
             <p class="article-header__intro">
-                An accessible and poetic work, Hubert Reeves’ “A Brief History
-                of Matter and the Universe” introduces readers of all ages to
-                the mysteries of the cosmos, mixing science, philosophy and
-                wonder to better understand our place in the Universe.
+                An accessible and poetic work, Hubert Reeves' “Petite Histoire
+                de la matière et de l’Univers” (A Brief History of Matter
+                and the Universe) introduces young and old alike to the
+                mysteries of the cosmos. Explore a narrative
+                that combines science, philosophy and wonder to
+                better understand our place in the Universe.
             </p>
         </header>
     
-        <!-- Visuel du livre -->
+        <!-- Couverture du livre -->
         <section class="section section--article">
-            <figure class="article-figure">
-                <div class="article-figure__frame"></div>
-                <img class="article-figure__img" src="/assets/img/article-hubert-reeves-book.jpg"
-                    alt="Cover of Hubert Reeves’ book A Brief History of Matter and the Universe" />
+            <figure class="article-figure article-figure--wide article-figure--hero5">
+                <div class="article-figure__frame" aria-hidden="true"></div>
+                <div class="article-figure__lines article-figure__lines--hero5" aria-hidden="true">
+                    <img src="/assets/img/lignes rotation.webp" alt="" />
+                </div>
+                <img class="article-figure__star article-figure__star--hero5-tl" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--hero5-tr" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--hero5-br" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__img article-figure__img--hero5" src="/assets/img/livrehubert.webp"
+                    alt="Couverture du livre Petite histoire de la matière et de l’Univers d’Hubert Reeves" />
+                <figcaption class="article-figure__caption article-figure__caption--hero5">
+                    “Petite Histoire de la matière et de l’Univers” <br>Hubert Reeves &amp; his friends
+                </figcaption>
             </figure>
         </section>
     
-        <!-- Comprendre l’histoire du cosmos -->
+        <!-- Livre pour comprendre l’histoire du cosmos -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
                 A book to understand the history of the cosmos
             </h2>
-            <p>
-                “A Brief History of Matter and the Universe”, written by Hubert
-                Reeves and his colleagues, is a key book for introducing the
-                history and mysteries of the cosmos. [web:7]
+    
+            <p class="article__text">
+                “A Brief History of Matter and the Universe” by Hubert Reeves
+                & his friends, a key work for understanding the history and
+                mysteries of the cosmos. This book stands out for its ability to make complex concepts accessible:
+                it traces the birth of the Universe, the formation of the first elements, cosmic expansion*, the place of galaxies and
+                stars, and above all the mysterious ‘dark matter’ that fascinates researchers and the general public alike.
             </p>
-            <p>
-                The authors trace the birth of the Universe, the formation of
-                the first elements, cosmic expansion, the role of galaxies and
-                stars, and the enigma of dark matter using clear, vivid and
-                often poetic language. [web:16][web:11]
+            <p class="article__text">
+                Hubert Reeves and his team use simple,
+                vivid and poetic language to explain the great adventure of
+                matter, from the Big Bang to human consciousness:
             </p>
-            <p>
-                The book raises essential questions: what is matter, how are the
-                infinitely small and infinitely large connected, how did Earth
-                and life emerge from billions of years of cosmic evolution, and
-                what is the nature of the invisible matter that makes up most of
-                the Universe. [web:16][web:11]
+            <ul class="article__list">
+                <li class="article__text">What is matter?</li>
+                <li class="article__text">
+                    What links exist between the infinitely small and
+                    the infinitely large?
+                </li>
+                <li class="article__text">
+                    How did our planet and life emerge from a
+                    long process of complexification spanning 13.7 billion
+                    years?
+                </li>
+                <li class="article__text">
+                    What is the nature of this invisible matter that
+                    makes up the majority of the Universe?
+                </li>
+            </ul>
+        </section>
+    
+        <!-- Entre science et philosophie -->
+        <section class="section section--article">
+            <h2 class="section__title section__title--h3">
+                Between science and philosophy, what place is there for humans ?
+            </h2>
+    
+            <p class="article__text">
+                The book also invites readers to philosophise about humanity's
+                place in the cosmos, linking science and wonder. Designed for
+                curious minds of all ages, it draws on illustrations,
+                anecdotes, interviews and the lively teaching style of Hubert
+                Reeves, renowned for his talent as a populariser of science.
             </p>
         </section>
     
-        <!-- Science et philosophie -->
-        <section class="section section--article">
-            <h2 class="section__title section__title--h3">
-                Between science and philosophy, what place is there for humans?
-            </h2>
-            <p>
-                Beyond scientific explanations, the book invites readers to
-                reflect on humanity’s place in the cosmos, linking scientific
-                knowledge with a sense of wonder and philosophical questions
-                about meaning. [web:7][web:10]
-            </p>
-            <p>
-                Designed for curious minds of all ages, it relies on
-                illustrations, anecdotes, interviews and Hubert Reeves’ talent
-                as a populariser of science to make complex ideas both
-                understandable and moving. [web:18][web:21]
-            </p>
-        </section>
+        <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
     </main>
     <footer class="footer">
         <div class="footer__inner section--wrapper">
             <div class="footer__brand">
-                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
     
-            <nav class="footer__nav" aria-label="Footer navigation">
+            <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
                     <li class="footer__item">
-                        <a class="footer__link" href="/index-en.html">HOME</a>
+                        <a class="footer__link" href="/en/index.html">HOME</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/articles-en.html">
-                            ARTICLES
-                        </a>
+                        <a class="footer__link" href="/en/article1.html">ARTICLES</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/about-en.html">
-                            ABOUT US
-                        </a>
+                        <a class="footer__link" href="/en/about.html">ABOUT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/contact-en.html">
-                            CONTACT
-                        </a>
+                        <a class="footer__link" href="/en/contact.html">CONTACT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/glossary-en.html">
-                            GLOSSARY
-                        </a>
+                        <a class="footer__link" href="/en/glossary.html">GLOSSARY</a>
                     </li>
                 </ul>
             </nav>
     
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
-                <p>
-                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                <p> IUT of Montbéliard MMi Department <br>
+                    4 pl. Lucien Tharradin <br>
+                    25200 Montbéliard <br>
+                    <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
                         lilian.maitre@edu.univ-fcomte.fr
                     </a>
                 </p>
@@ -222,13 +246,13 @@
         </div>
     
         <p class="footer__legal">
-            Project completed in 2025 as part of an educational exercise at
-            the
+            Project completed in 2025 as part of an educational
+            exercise at the
             <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
                 MMi department in Montbéliard
             </a>
-            .
         </p>
     </footer>
-</body>
-</html>
+    </body>
+    
+    </html>
