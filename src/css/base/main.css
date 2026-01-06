@@ -261,15 +261,16 @@ p {
 .article-figure__star--wide-tr {
     top: -20px;
     right: 1px;
-    width: min(32px, 1vw);
+    width: min(32px, 45vw);
+    height: min(40px, 50vw);
     transform: rotate(12deg);
 }
 
 .article-figure__star--wide-bl {
-    bottom: 50px;
-    left: -15px;
-    width: min(32px, 1vw);
-    height: min(32px, 1vw);
+    bottom: 30px;
+    left: -10px;
+    width: min(30px, 50vw);
+    height: min(32px, 50vw);
     transform: rotate(-9deg);
 }
 
