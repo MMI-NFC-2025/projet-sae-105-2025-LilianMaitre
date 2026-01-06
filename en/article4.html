@@ -24,285 +24,275 @@
     
     <body>
         <header class="header">
-            <a class="header__link" href="/index-en.html">
+            <a class="header__link" href="/en/index.html">
                 <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
             </a>
-    
+        
             <p class="header__lang">
-                <a class="header__lang-btn" href="/vera-rubin.html">FR/EN</a>
+                <a class="header__lang-btn" href="/en/index.html">FR/EN</a>
             </p>
-    
+        
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
                 <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
                 <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
                 <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
             </button>
-    
-            <!-- même nav que sur index-en -->
+        
             <nav class="header__menu menu" id="mainNav" hidden>
-                <!-- ... ton menu mobile EN ... -->
+                <p class="menu__brand">Étoiles Oubliées</p>
+        
+                <ul class="menu__list u-list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/index.html">Home</a>
+                    </li>
+        
+                    <li class="menu__item menu__item--has-children">
+                        <button class="menu__link menu__link--button" type="button" aria-expanded="false"
+                            aria-controls="menuArticles" id="btnArticles">
+                            Articles
+                        </button>
+        
+                        <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
+                            <li class="menu__sub-item">
+                                <a class="menu__sub-link" href="/en/article1.html">
+                                    Vera Rubin
+                                </a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a class="menu__sub-link" href="/en/article2.html">
+                                    Women &amp; literature
+                                </a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a class="menu__sub-link" href="/en/article3.html">
+                                    Popularising theory
+                                </a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a class="menu__sub-link" href="/en/article4.html">
+                                    Interstellar &amp; women
+                                </a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a class="menu__sub-link" href="/en/article5.html">
+                                    Hubert Reeves’ book
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/frise.html">Matilda timeline</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/recos.html">Gallery</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/contact.html">Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/about.html">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/otherprojects.html">Other projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/glossary.html">Glossary</a>
+                    </li>
+                </ul>
+        
+                <p class="menu__legal">
+                    Project completed in 2025 as part of an educational
+                    exercise at the
+                    <a class="menu__legal-link" href="https://mmimontbeliard.com" target="_blank" rel="noreferrer">
+                        MMi department in Montbéliard
+                    </a>
+                </p>
             </nav>
+        
         </header>
     
-        <main class="wrapper wrapper--article">
-            <p class="article-breadcrumb">Articles</p>
-    
-            <header class="article-header article-header--center">
-                <p class="article-header__overline">Vera</p>
-                <h1 class="article-header__title">RUBIN</h1>
-                <p class="article-header__intro">
-                    A pioneering astrophysicist, Vera Rubin transformed our
-                    understanding of the Universe by revealing the existence of
-                    dark matter. Discover the journey of a committed scientist, a
-                    tireless mentor and a symbol of the fight against the
-                    invisibility of women in science.
-                </p>
-            </header>
-</head>
-<body>
-    <header class="header">
-        <a class="header__link" href="/index-en.html">
-            <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
-        </a>
-    
-        <p class="header__lang">
-            <a class="header__lang-btn" href="/index.html">FR/EN</a>
-        </p>
-    
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
-            <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
-            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
-        </button>
-    
-        <nav class="header__menu menu" id="mainNav" hidden>
-            <p class="menu__brand">Étoiles Oubliées</p>
-            <ul class="menu__list u-list-unstyled">
-                <li class="menu__item">
-                    <a class="menu__link" href="/index-en.html">Home</a>
-                </li>
-                <li class="menu__item menu__item--has-children">
-                    <button class="menu__link menu__link--button" type="button" aria-expanded="false"
-                        aria-controls="menuArticlesEn" id="btnArticlesEn">
-                        Articles
-                    </button>
-                    <ul class="menu__sub-list u-list-unstyled" id="menuArticlesEn" hidden>
-                        <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/vera-rubin-en.html">
-                                Vera Rubin
-                            </a>
-                        </li>
-                        <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/women-literature-en.html">
-                                Women &amp; literature
-                            </a>
-                        </li>
-                        <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/popularisation-en.html">
-                                Popularisation
-                            </a>
-                        </li>
-                        <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/interstellar-en.html">
-                                Interstellar
-                            </a>
-                        </li>
-                        <li class="menu__sub-item">
-                            <a class="menu__sub-link" href="/hubert-reeves-en.html">
-                                Hubert Reeves’ book
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/timeline-en.html">
-                        Matilda timeline
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/gallery-en.html">Gallery</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/contact-en.html">Contact</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/about-en.html">About us</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/other-projects-en.html">
-                        Other projects
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/glossary-en.html">Glossary</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main class="wrapper wrapper--article">
-        <p class="article-breadcrumb">Articles</p>
-    
-        <header class="article-header article-header--center">
+        <!-- En-tête article -->
+        <header class="article-header">
             <h1 class="article-header__title">Interstellar</h1>
             <p class="article-header__intro">
-                The film “Interstellar” puts female scientists in the spotlight
-                through complex, powerful characters. This article looks at the
-                impact of this representation on the image of women in science,
-                its limitations and its educational implications.
+                The film ‘Interstellar’ puts female scientists in the spotlight
+                through complex and powerful characters. Analyse the
+                impact of this representation on the image of women
+                in science, its limitations and its educational implications.
             </p>
         </header>
     
-        <!-- Image d’ouverture -->
+        <!-- Image Amelia Brand -->
         <section class="section section--article">
-            <figure class="article-figure">
-                <div class="article-figure__frame"></div>
-                <img class="article-figure__img" src="/assets/img/article-interstellar-still.jpg"
-                    alt="Scene from Interstellar with an astronaut on a planet" />
+            <figure class="article-figure article-figure--wide article-figure--hero4">
+                <img class="article-figure__star article-figure__star--wide-tl" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <img class="article-figure__star article-figure__star--wide-tr" src="/assets/img/scintiller.webp" alt=""
+                    aria-hidden="true" />
+                <div class="article-figure__frame" aria-hidden="true"></div>
+                <div class="article-figure__lines article-figure__lines--hero4" aria-hidden="true">
+                    <img src="/assets/img/lignes rotation.webp" alt="" />
+                </div>
+                <img class="article-figure__img" src="/assets/img/interstellar.webp"
+                    alt="Amelia Brand en combinaison spatiale, dans le film Interstellar" />
+                <figcaption class="article-figure__caption">
+                    Photo of Amelia Brand in “Interstellar”
+                </figcaption>
             </figure>
         </section>
     
-        <!-- Intro sur les scientifiques -->
+        <!-- Women scientists at the heart of the scenario -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
                 Women scientists at the heart of the scenario
             </h2>
-            <p>
-                In Christopher Nolan’s “Interstellar”, the rehabilitation of
-                female scientists is embodied mainly through Murphy Cooper and
-                Amelia Brand. These characters give new visibility to women
-                scientists on screen, in a cinematic universe where they are
-                still too often relegated to secondary or stereotypical roles.
+    
+            <p class="article__text">
+                In Christopher Nolan's film ‘Interstellar’, the rehabilitation
+                of female scientists is embodied mainly through the character
+                of Murphy Cooper, but also through that of Amelia Brand.
+                These characters give new visibility to female scientists on
+                screen, in a cinematic universe where they are too often
+                relegated to secondary or stereotypical roles.
             </p>
         </section>
     
-        <!-- Murphy -->
+        <!-- Murphy Cooper -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">Murphy Cooper</h2>
-            <p>
-                Murphy, played by Jessica Chastain as an adult, is a brilliant
-                physicist at NASA. She is not just the “hero’s daughter” but
-                plays a crucial role in advancing the plot: thanks to her
-                scientific determination and skills in mathematics and
-                theoretical physics, she manages to solve the equation that will
-                save humanity.
+    
+            <p class="article__text">
+                Murphy, played by Jessica Chastain as an adult, is
+                a brilliant physicist at NASA. She is not just
+                the ‘hero's daughter’ but plays a crucial role in advancing
+                the plot: it is she who, thanks to her scientific determination
+                and her skills in mathematics and theoretical physics,
+                manages to solve the equation that will save
+                humanity.
             </p>
-            <p>
-                Surrounded by equations and research work, Murphy is shown as a
-                real agent of scientific progress, far from the clichés of the
-                muse or assistant. Her perseverance in the face of doubt, lost
-                years and late recognition subtly echoes the careers of many
-                real‑life women scientists, including Vera Rubin.
+            <p class="article__text">
+                Her character is surrounded by tables of equations and
+                scientific work, which legitimises her as a real
+                player in scientific progress, far from the clichés of
+                the ‘muse’ or assistant. The film also highlights
+                her perseverance in the face of doubt, lost years,
+                and the injustice of belated recognition, subtly
+                echoing the journeys of many women in science
+                in real life, including Vera Rubin.
             </p>
         </section>
     
-        <!-- Amelia -->
+        <!-- Amelia Brand -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">Amelia Brand</h2>
-            <p>
+    
+            <p class="article__text">
                 Amelia Brand, played by Anne Hathaway, leads the main space
-                mission. She embodies scientific determination, courage,
-                leadership and a strong capacity for taking risks.
+                mission. Her role is ambivalent: she embodies
+                scientific determination, courage, leadership skills
+                and risk-taking. However, the script gives
+                prominence to her emotions and affective choices,
+                sometimes to the detriment of scientific decisions, which
+                recalls certain persistent stereotypes in the construction
+                of female characters in cinema.
             </p>
-            <p>
-                However, the script often places the emphasis on her emotions
-                and affective choices, sometimes at the expense of scientific
-                decisions. This recalls certain persistent stereotypes in how
-                female characters are written, even though Amelia remains a
-                competent scientist, committed to survival and progress.
+            <p class="article__text">
+                Despite this, Amelia
+                remains a figure of a competent female scientist, committed
+                to the pursuit of survival and progress.
             </p>
         </section>
     
-        <!-- Impact / limites -->
+        <!-- Impact et limites -->
         <section class="section section--article">
             <h2 class="section__title section__title--h3">
-                Impact and limitations of representation in Interstellar
+                Impact and limitations of representation
+                in Interstellar
             </h2>
-            <p>
-                “Interstellar” allows a very broad audience to identify with
-                intelligent, passionate female characters who play decisive
-                roles in solving complex scientific problems. The film helps
-                break down the image of the exclusively male scientist, offers
-                contemporary role models and can encourage young girls to
-                consider scientific careers.
+    
+            <p class="article__text">
+                Interstellar allows a very wide audience to identify with
+                intelligent, passionate female characters who play a decisive role
+                in solving complex scientific problems. It helps to break down
+                the image of the exclusively male scientist, offers
+                contemporary role models and encourages young
+                girls to consider careers in science.
             </p>
-            <p>
-                Scenes in which Murphy works beneath blackboards filled with
-                equations or in NASA laboratories contribute to a positive,
-                empowering representation of women scientists. At the same time,
-                they invite viewers to reflect on the obstacles that still
-                exist, both on screen and in reality.
+            <p class="article__text">
+                The series of scenes where Murphy is shown beneath tables
+                of equations or in NASA laboratories promotes
+                a positive and empowering representation of women
+                scientists, while inviting us to question the obstacles
+                that still exist, both in fiction and in reality.
             </p>
         </section>
     
-        <!-- Bande‑annonce + CTA galerie -->
+        <!-- Bande-annonce + CTA galerie -->
         <section class="section section--article section--cta">
-            <h2 class="section__title section__title--h3">Interstellar trailer</h2>
+            <h2 class="section__title section__title--h3">
+                Interstellar trailer
+            </h2>
     
             <figure class="article-figure article-figure--video">
-                <div class="article-figure__frame article-figure__frame--wide"></div>
-                <a class="article-video" href="https://www.youtube.com/watch?v=Tbn8_XQW9y8" target="_blank"
-                    rel="noreferrer">
-                    <img class="article-video__thumb" src="/assets/img/article-interstellar-trailer.jpg"
-                        alt="Thumbnail of the Interstellar official trailer" />
-                    <span class="article-video__label">
-                        Interstellar – Official Trailer (VF) – YouTube
-                    </span>
-                </a>
+                <div class="article-video__embed">
+                    <iframe src="https://www.youtube.com/watch?v=zSWdZVtXT7E"
+                        title="Interstellar - Trailer - Official Warner Bros. UK"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </figure>
     
-            <p>
-                Beyond “Interstellar”, other films and series deal with
-                astronomy and the place of women in science. Several of them are
-                listed in our gallery.
+            <p class="article__text">
+                In addition to Interstellar, there are other audiovisual works
+                related to astronomy and the consideration of women. We
+                have listed a few of them in our film/series gallery !
             </p>
     
-            <p class="section__actions">
-                <a class="btn btn--primary" href="/gallery-en.html">
-                    Check the gallery
+            <p class="section__footer">
+                <a class="btn-wide" href="/en/recos.html">
+                    View the gallery
                 </a>
             </p>
         </section>
+    
+        <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco1">
     </main>
     <footer class="footer">
         <div class="footer__inner section--wrapper">
             <div class="footer__brand">
-                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Étoiles oubliées logo" />
+                <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
     
-            <nav class="footer__nav" aria-label="Footer navigation">
+            <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
                     <li class="footer__item">
-                        <a class="footer__link" href="/index-en.html">HOME</a>
+                        <a class="footer__link" href="/en/index.html">HOME</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/articles-en.html">
-                            ARTICLES
-                        </a>
+                        <a class="footer__link" href="/en/article1.html">ARTICLES</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/about-en.html">
-                            ABOUT US
-                        </a>
+                        <a class="footer__link" href="/en/about.html">ABOUT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/contact-en.html">
-                            CONTACT
-                        </a>
+                        <a class="footer__link" href="/en/contact.html">CONTACT</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="/glossary-en.html">
-                            GLOSSARY
-                        </a>
+                        <a class="footer__link" href="/en/glossary.html">GLOSSARY</a>
                     </li>
                 </ul>
             </nav>
     
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
-                <p>
-                    <a class="footer__link" href="mailto:lilian.maitre@edu.univ-fcomte.fr">
+                <p> IUT of Montbéliard MMi Department <br>
+                    4 pl. Lucien Tharradin <br>
+                    25200 Montbéliard <br>
+                    <a href="mailto:lilian.maitre@edu.univ-fcomte.fr">
                         lilian.maitre@edu.univ-fcomte.fr
                     </a>
                 </p>
@@ -315,13 +305,13 @@
         </div>
     
         <p class="footer__legal">
-            Project completed in 2025 as part of an educational exercise at
-            the
+            Project completed in 2025 as part of an educational
+            exercise at the
             <a class="footer__link footer__link--silent" href="https://mmimontbeliard.com">
                 MMi department in Montbéliard
             </a>
-            .
         </p>
     </footer>
-</body>
-</html>
+    </body>
+    
+    </html>
