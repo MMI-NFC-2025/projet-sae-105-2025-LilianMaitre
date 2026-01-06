@@ -35,3 +35,17 @@
     color: var(--orange);
     text-decoration: underline;
 }
+
+.card-media__img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.card-media__title{
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: var(--text-m);
+    font-weight: 700;
+    color: var(--blanc);
+    margin-bottom: 0.5rem;
+}
