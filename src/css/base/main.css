@@ -235,20 +235,26 @@ p {
 }
 
 .article-figure__star--tl {
-    top: -22px;
-    left: -18px;
+    width: min(60px, 12vw);
+    top: -30px;
+    left: -50px;
+    transform: rotate(-8deg);
 }
 
 .article-figure__star--br {
-    bottom: -22px;
-    right: -6px;
+    width: min(70px, 7vw);
+    height: min(70px, 7vw);
+    bottom: -15px;
+    right: -10px;
+    transform: rotate(0deg);
 }
 
 .article-figure__star--tr {
-    top: -10px;
-    right: -8px;
-    width: 42px;
-    height: 60px;
+    top: -25px;
+    right: -40px;
+    width: min(60px, 10vw);
+    height: min(60px, 10vw);
+    transform: rotate(6deg);
 }
 
 .article-figure__star--wide-tr {
@@ -256,6 +262,7 @@ p {
     right: -5px;
     width: 40px;
     height: 40px;
+    transform: rotate(12deg);
 }
 
 .article-figure__star--wide-bl {
@@ -263,12 +270,13 @@ p {
     left: -15px;
     width: 35px;
     height: 42px;
+    transform: rotate(-9deg);
 }
 
 .article-figure__frame--wide {
     position: absolute;
     top: -2%;
-    left: 1%;
+    left: -1%;
     right: auto;
     width: clamp(320px, 18vw, 190px);
     height: clamp(200px, 18vw, 170px);
@@ -278,10 +286,11 @@ p {
 }
 
 .article-figure--wide .article-figure__img {
-    width: min(940px, 98vw);
+    width: min(940px, 90vw);
     max-width: none;
     border-radius: 18px;
     z-index: 2;
+    left: -2%;
 }
 
 .article-figure--wide .article-figure__caption {

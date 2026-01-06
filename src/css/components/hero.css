@@ -59,7 +59,6 @@
 .stars-overlay img {
     z-index: 15 !important;
     bottom: -20% !important;
-    /* Visible */
     opacity: 1 !important;
 }
 
