@@ -63,6 +63,7 @@
     width: 100%;
     height: 170px;
     min-height: 150px;
+    border-radius: 18px 18px 0 0;
     overflow: hidden;
     background: #000;
 }
@@ -135,38 +136,56 @@
     margin-top: 2rem;
 }
 
+/* Remove extra wrapper spacing on the first card so all cards align evenly */
+.articles>.section.section--wrapper {
+    display: contents;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
 .section--articles {
     position: relative;
 }
 
 .section__stars {
     position: absolute;
-    top: -1.4rem;
-    left: 50%;
-    display: flex;
-    gap: 0.7rem;
-    transform: translateX(-50%);
+    top: -2.2rem;
+    left: 0;
+    right: 0;
+    height: 5.5rem;
     pointer-events: none;
     z-index: 1;
 }
 
 .section__star {
-    width: 26px;
-    height: 26px;
+    position: absolute;
     display: block;
     filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
 }
 
 .section__star--1 {
-    transform: rotate(-8deg);
+    width: 24px;
+    height: 26px;
+    left: -0%;
+    top: 50%;
+    transform: rotate(-6deg);
 }
 
 .section__star--2 {
+    width: 44px;
+    height: 48px;
+    left: 40%;
+    top: 10%;
     transform: rotate(6deg);
 }
 
 .section__star--3 {
-    transform: rotate(-4deg);
+    width: 59px;
+    height: 64px;
+    right: 7%;
+    top: -30%;
+    transform: rotate(8deg);
 }
 
 .articles__cta {
