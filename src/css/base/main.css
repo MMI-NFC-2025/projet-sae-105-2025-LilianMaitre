@@ -91,7 +91,7 @@ p {
 }
 
 .article-header__title {
-    margin: 0 0 1rem;
+    margin: 4rem 0 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: var(--text-3xl);
@@ -118,7 +118,7 @@ p {
 .article-figure {
     position: relative;
     width: min(240px, 78vw);
-    margin: 1.75rem auto 1.5rem;
+    margin: 1.75rem auto 2.6rem;
     display: grid;
     place-items: center;
 }
@@ -206,13 +206,14 @@ p {
 }
 
 .article-figure__caption {
+    font-family: "helvetica neue", system-ui, sans-serif;
+    font-size: var(--text-xs);
     position: absolute;
     left: 0;
     bottom: -1.2rem;
     margin: 0;
     text-align: left;
     color: var(--orange);
-    font-weight: 400;
 }
 
 .article-figure--wide {
@@ -243,7 +244,7 @@ p {
 
 .article-figure__star--br {
     width: min(70px, 7vw);
-    height: min(70px, 7vw);
+    height: min(70px, 8vw);
     bottom: -15px;
     right: -10px;
     transform: rotate(0deg);
@@ -252,25 +253,40 @@ p {
 .article-figure__star--tr {
     top: -25px;
     right: -40px;
-    width: min(60px, 10vw);
+    width: min(60px, 9vw);
     height: min(60px, 10vw);
     transform: rotate(6deg);
 }
 
 .article-figure__star--wide-tr {
-    top: -12px;
-    right: -5px;
-    width: 40px;
-    height: 40px;
+    top: -20px;
+    right: 1px;
+    width: min(32px, 1vw);
     transform: rotate(12deg);
 }
 
 .article-figure__star--wide-bl {
-    bottom: 30px;
+    bottom: 50px;
     left: -15px;
-    width: 35px;
-    height: 42px;
+    width: min(32px, 1vw);
+    height: min(32px, 1vw);
     transform: rotate(-9deg);
+}
+
+.article-figure__star--wide-tl {
+    top: -18px;
+    left: -10px;
+    width: 36px;
+    height: 38px;
+    transform: rotate(-10deg);
+}
+
+.article-figure__star--wide-br {
+    bottom: 5px;
+    right: 5px;
+    width: 38px;
+    height: 42px;
+    transform: rotate(-8deg);
 }
 
 .article-figure__frame--wide {
@@ -320,7 +336,7 @@ p {
 
 /* Video embed styles */
 .article-figure--video {
-    width: 100%;
+    width: min(820px, 85vw);
     margin: 2.4rem auto;
     padding: 0;
     position: relative;

@@ -15,8 +15,8 @@
     display: block;
     position: absolute;
     top: -2%;
-    left: -2%;
-    width: 85%;
+    left: 5%;
+    width: 60%;
     height: 70%;
     background: var(--orange);
     border-radius: 18px;
@@ -24,7 +24,7 @@
 }
 
 .article-figure--hero2 .article-figure__img {
-    width: min(900px, 90vw);
+    width: min(760px, 75vw);
     max-width: none;
     aspect-ratio: 4 / 3;
     height: auto;
@@ -35,9 +35,9 @@
 
 .article-figure--hero2 .article-figure__lines--hero2 {
     position: absolute;
-    top: 50%;
-    left: -8%;
-    width: 120%;
+    top: 30%;
+    left: 14%;
+    width: 400%;
     max-width: 900px;
     transform: translate(-50%, -50%) scaleX(-1);
     z-index: 2;
@@ -51,21 +51,36 @@
 }
 
 .article-figure--hero2 .article-figure__caption {
-    display: none;
+    position: static;
+    margin: 0.5rem auto 0;
+    width: min(760px, 88vw);
+    color: var(--orange);
+    text-align: left;
+    padding: 0 0 0 1.25rem;
 }
 
 .article-figure--hero2 .article-figure__star--wide-tr {
-    top: -12px;
-    right: -8px;
-    width: 44px;
-    height: 44px;
+    top: -25px;
+    right: 20px;
+    width: 30px;
+    height: 34px;
+    transform: rotate(-10deg)
 }
 
 .article-figure--hero2 .article-figure__star--wide-bl {
-    bottom: -10px;
-    left: -8px;
-    width: 44px;
+    bottom: 10px;
+    left: -7px;
+    width: 33px;
+    height: 37px;
+    transform: rotate(11deg);
+}
+
+.article-figure--hero2 .article-figure__star--wide-tl {
+    top: -35px;
+    left: -10px;
+    width: 40px;
     height: 44px;
+    transform: rotate(-10deg);
 }
 
 /* Hero styles for article 3 */
@@ -79,10 +94,9 @@
 }
 
 .article-figure--hero3 .article-figure__frame {
-    top: -4%;
-    left: -3%;
-    right: auto;
-    width: 88%;
+    right: 6%;
+    top: 9%;
+    width: 78%;
     height: 83%;
     background: var(--orange);
     border-radius: 18px;
@@ -90,7 +104,7 @@
 }
 
 .article-figure--hero3 .article-figure__img {
-    width: min(900px, 95vw);
+    width: min(900px, 80vw);
     max-width: none;
     aspect-ratio: 4 / 3;
     height: auto;
@@ -106,9 +120,9 @@
     position: absolute;
     top: 52%;
     left: 50%;
-    width: 115%;
+    width: 150%;
     max-width: 960px;
-    transform: translate(-50%, -50%) scaleX(-1);
+    transform: translate(-50%, -50%) scaleY(-1);
     z-index: 2;
     opacity: 0.9;
     pointer-events: none;
@@ -120,17 +134,18 @@
 }
 
 .article-figure--hero3 .article-figure__star--wide-tr {
-    top: -10px;
-    right: -6px;
-    width: 42px;
-    height: 42px;
+    top: -20px;
+    right: 1px;
+    width: 30px;
+    height: 35px;
 }
 
 .article-figure--hero3 .article-figure__star--wide-bl {
-    bottom: -15px;
-    left: -8px;
-    width: 42px;
-    height: 42px;
+    bottom: 15px;
+    left: 8px;
+    width: 30px;
+    height: 32px;
+    transform: rotate(0deg);
 }
 
 .article-figure--hero3 .article-figure__caption {
@@ -206,16 +221,17 @@
 
 .article-figure--hero4 .article-figure__star--wide-tl {
     top: -14px;
-    left: -12px;
-    width: 44px;
+    width: 40px;
     height: 44px;
+    transform: rotate(4deg);
 }
 
 .article-figure--hero4 .article-figure__star--wide-tr {
-    top: -14px;
-    right: -12px;
-    width: 44px;
+    top: -12px;
+    right: -5px;
+    width: 40px;
     height: 44px;
+    transform: rotate(-12deg);
 }
 
 /* Hero styles for article 5 */
@@ -273,27 +289,30 @@
 }
 
 .article-figure--hero5 .article-figure__star--hero5-tl {
-    top: 2px;
+    top: -5px;
     left: 65px;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 42px;
     z-index: 5;
+    transform: rotate(-8deg);
 }
 
 .article-figure--hero5 .article-figure__star--hero5-tr {
-    top: 2px;
-    right: 65px;
-    width: 46px;
-    height: 46px;
+    top: -5px;
+    right: 75px;
+    width: 40px;
+    height: 42px;
     z-index: 5;
+    transform: rotate(-8deg);
 }
 
 .article-figure--hero5 .article-figure__star--hero5-br {
-    bottom: 60px;
-    right: 60px;
-    width: 46px;
-    height: 46px;
+    bottom: 50px;
+    right: 85px;
+    width: 28px;
+    height: 32px;
     z-index: 5;
+    transform: rotate(8deg);
 }
 
 .article-figure--hero5 .article-figure__caption--hero5 {
