@@ -42,8 +42,18 @@
 
 /* AQITA */
 .project-list__item:nth-child(6) .project-list__logo {
-    width: 40px;
-    height: 10px;
+    width: 48px;
+    height: 48px;
+    padding: 12px 8px;
+    object-fit: contain;
+}
+
+/* ADA */
+.project-list__item:nth-child(5) .project-list__logo {
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+    object-fit: contain;
 }
 
 .project-list__name {
