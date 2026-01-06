@@ -1,7 +1,74 @@
-.section--gallery {
+.section--gallery.carousel {
+    display: block;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel__controls {
     display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.carousel__btn {
+    background: var(--orange);
+    color: var(--blanc);
+    border: 1px solid var(--orange);
+    border-radius: 999px;
+    padding: 0.45rem 0.85rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: transform 120ms ease, background 120ms ease;
+}
+
+.carousel__btn:hover,
+.carousel__btn:focus-visible {
+    background: var(--orange);
+    transform: translateY(-1px);
+}
+
+.carousel__btn:active {
+    transform: translateY(0);
+}
+
+.carousel__track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(260px, 340px);
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0.5rem 0.25rem 0.75rem;
+}
+
+.carousel__track::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel__track::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.carousel__track::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 999px;
+}
+
+.card-media {
+    scroll-snap-align: start;
+}
+
+.card-media__title {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: var(--text-m);
+    font-weight: 700;
+    color: var(--blanc);
+    margin-bottom: 0.5rem;
 }
 
 .media-card__title {
@@ -36,13 +103,13 @@
     text-decoration: underline;
 }
 
-.card-media__img{
+.card-media__img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
 
-.card-media__title{
+.card-media__title {
     font-family: "Montserrat", system-ui, sans-serif;
     font-size: var(--text-m);
     font-weight: 700;

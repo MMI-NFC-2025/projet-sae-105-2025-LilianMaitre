@@ -29,31 +29,31 @@
         <a class="header__link" href="/">
             <img class="header__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
         </a>
-    
+
         <p class="header__lang">
             <button class="header__lang-btn" type="button">FR/EN</button>
         </p>
-    
+
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
             <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
             <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
         </button>
-    
+
         <nav class="header__menu menu" id="mainNav" hidden>
             <p class="menu__brand">Étoiles Oubliées</p>
-    
+
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
                     <a class="menu__link" href="/index.html">Accueil</a>
                 </li>
-    
+
                 <li class="menu__item menu__item--has-children">
                     <button class="menu__link menu__link--button" type="button" aria-expanded="false"
                         aria-controls="menuArticles" id="btnArticles">
                         Articles
                     </button>
-    
+
                     <ul class="menu__sub-list u-list-unstyled" id="menuArticles" hidden>
                         <li class="menu__sub-item">
                             <a class="menu__sub-link" href="/fr/article1.html">
@@ -82,7 +82,7 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li class="menu__item">
                     <a class="menu__link" href="/fr/frise.html">Frise des Matilda</a>
                 </li>
@@ -102,7 +102,7 @@
                     <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
                 </li>
             </ul>
-    
+
             <p class="menu__legal">
                 projet réalisé en 2025 dans le cadre d’un exercice pédagogique
                 au
@@ -111,7 +111,7 @@
                 </a>
             </p>
         </nav>
-    
+
     </header>
 
     <main class="wrapper wrapper--article">
@@ -133,127 +133,135 @@
             </p>
         </section>
 
-        <section class="section section--article section--gallery">
-            <!-- Carte : Les figures de l’ombre -->
-            <article class="card-media">
-                <h2 class="card-media__title">Les figures de l’ombre</h2>
-                <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html"
-                    target="_blank" rel="noreferrer">
-                    <img class="card-media__img" src="/assets/img/lesfiguresdel'ombre.webp"
-                        alt="Affiche du film Les figures de l’ombre" />
-                </a>
-                <p class="card-media__source">
-                    <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html" class="u-link-highlight"
+        <section class="section section--article section--gallery carousel carousel--recos">
+            <div class="carousel__controls" aria-label="Navigation du carrousel">
+                <button class="carousel__btn" type="button" data-dir="prev">Précédent</button>
+                <button class="carousel__btn" type="button" data-dir="next">Suivant</button>
+            </div>
+
+            <div class="carousel__track" role="list">
+                <!-- Carte : Les figures de l’ombre -->
+                <article class="card-media" role="listitem">
+                    <h2 class="card-media__title">Les figures de l’ombre</h2>
+                    <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html"
                         target="_blank" rel="noreferrer">
-                        Fiche Allociné
+                        <img class="card-media__img" src="/assets/img/lesfiguresdel'ombre.webp"
+                            alt="Affiche du film Les figures de l’ombre" />
                     </a>
-                </p>
-                <p class="card-media__desc">
-                    Le film retrace le destin extraordinaire de trois
-                    scientifiques afro‑américaines qui ont permis aux
-                    États‑Unis de prendre la tête de la conquête spatiale en
-                    mettant en orbite l’astronaute John&nbsp;Glenn. Longtemps
-                    maintenues dans l’ombre en raison du sexisme et du racisme,
-                    leurs contributions décisives sont enfin mises en lumière.
-                </p>
-            </article>
+                    <p class="card-media__source">
+                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=219070.html" class="u-link-highlight"
+                            target="_blank" rel="noreferrer">
+                            Fiche Allociné
+                        </a>
+                    </p>
+                    <p class="card-media__desc">
+                        Le film retrace le destin extraordinaire de trois
+                        scientifiques afro‑américaines qui ont permis aux
+                        États‑Unis de prendre la tête de la conquête spatiale en
+                        mettant en orbite l’astronaute John&nbsp;Glenn. Longtemps
+                        maintenues dans l’ombre en raison du sexisme et du racisme,
+                        leurs contributions décisives sont enfin mises en lumière.
+                    </p>
+                </article>
 
-            <!-- Carte : Étoile du Nord -->
-            <article class="card-media">
-                <h2 class="card-media__title">Étoile du Nord</h2>
-                <a class="card-media__link"
-                    href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
-                    target="_blank" rel="noreferrer">
-                    <img class="card-media__img" src="/assets/img/etoiledunord.webp"
-                        alt="Visuel de la série documentaire Étoile du Nord" />
-                </a>
-                <p class="card-media__source">
-                    <a href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
-                        class="u-link-highlight" target="_blank" rel="noreferrer">
-                        Fiche pédagogique
-                    </a>
-                </p>
-                <p class="card-media__desc">
-                    Cette série documentaire en plusieurs épisodes suit
-                    l’astronome Laurie Rousseau‑Nepton, qui dirige un projet de
-                    recherche au télescope Canada‑France‑Hawaï. Elle y relie
-                    observation du ciel, culture innue, transmission
-                    intergénérationnelle et vulgarisation, offrant un regard
-                    original sur l’astronomie et le rôle des femmes
-                    scientifiques autochtones.
-                </p>
-            </article>
-
-            <!-- Carte : Gravity -->
-            <article class="card-media">
-                <h2 class="card-media__title">Gravity</h2>
-                <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html"
-                    target="_blank" rel="noreferrer">
-                    <img class="card-media__img" src="/assets/img/gravity.webp" alt="Affiche du film Gravity" />
-                </a>
-                <p class="card-media__source">
-                    <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html" class="u-link-highlight"
+                <!-- Carte : Étoile du Nord -->
+                <article class="card-media" role="listitem">
+                    <h2 class="card-media__title">Étoile du Nord</h2>
+                    <a class="card-media__link"
+                        href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
                         target="_blank" rel="noreferrer">
-                        Fiche Allociné
+                        <img class="card-media__img" src="/assets/img/etoiledunord.webp"
+                            alt="Visuel de la série documentaire Étoile du Nord" />
                     </a>
-                </p>
-                <p class="card-media__desc">
-                    Le film suit le docteur Ryan Stone, experte en ingénierie
-                    médicale, lors de sa première mission spatiale. Après la
-                    destruction de la navette, elle se retrouve isolée dans
-                    l’espace et doit survivre seule. Au‑delà du spectacle
-                    visuel, le récit met au centre une femme scientifique
-                    confrontée à ses peurs, à la perte et à la résilience.
-                </p>
-            </article>
+                    <p class="card-media__source">
+                        <a href="https://classe.culture-education.ca/etoile-du-nord-une-serie-documentaire-pour-enseigner-lastronomie/"
+                            class="u-link-highlight" target="_blank" rel="noreferrer">
+                            Fiche pédagogique
+                        </a>
+                    </p>
+                    <p class="card-media__desc">
+                        Cette série documentaire en plusieurs épisodes suit
+                        l’astronome Laurie Rousseau‑Nepton, qui dirige un projet de
+                        recherche au télescope Canada‑France‑Hawaï. Elle y relie
+                        observation du ciel, culture innue, transmission
+                        intergénérationnelle et vulgarisation, offrant un regard
+                        original sur l’astronomie et le rôle des femmes
+                        scientifiques autochtones.
+                    </p>
+                </article>
 
-            <!-- Carte : Proxima -->
-            <article class="card-media">
-                <h2 class="card-media__title">Proxima</h2>
-                <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html"
-                    target="_blank" rel="noreferrer">
-                    <img class="card-media__img" src="/assets/img/proxima.webp" alt="Affiche du film Proxima" />
-                </a>
-                <p class="card-media__source">
-                    <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html" class="u-link-highlight"
+                <!-- Carte : Gravity -->
+                <article class="card-media" role="listitem">
+                    <h2 class="card-media__title">Gravity</h2>
+                    <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html"
                         target="_blank" rel="noreferrer">
-                        Fiche Allociné
+                        <img class="card-media__img" src="/assets/img/gravity.webp" alt="Affiche du film Gravity" />
                     </a>
-                </p>
-                <p class="card-media__desc">
-                    Le long‑métrage suit Sarah, astronaute française qui se
-                    prépare à une mission spatiale d’un an tout en gérant sa
-                    relation avec sa fille de huit ans. Le film aborde la
-                    charge mentale, la conciliation entre vocation scientifique
-                    et vie familiale, ainsi que la place des femmes dans les
-                    programmes spatiaux.
-                </p>
-            </article>
+                    <p class="card-media__source">
+                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=178496.html" class="u-link-highlight"
+                            target="_blank" rel="noreferrer">
+                            Fiche Allociné
+                        </a>
+                    </p>
+                    <p class="card-media__desc">
+                        Le film suit le docteur Ryan Stone, experte en ingénierie
+                        médicale, lors de sa première mission spatiale. Après la
+                        destruction de la navette, elle se retrouve isolée dans
+                        l’espace et doit survivre seule. Au‑delà du spectacle
+                        visuel, le récit met au centre une femme scientifique
+                        confrontée à ses peurs, à la perte et à la résilience.
+                    </p>
+                </article>
 
-            <!-- Carte : Chercheuses d’étoiles -->
-            <article class="card-media">
-                <h2 class="card-media__title">Chercheuses d’étoiles</h2>
-                <a class="card-media__link" href="https://www.youtube.com/watch?v=2AO6MCP0AzM" target="_blank"
-                    rel="noreferrer">
-                    <img class="card-media__img" src="/assets/img/docu.webp"
-                        alt="Visuel de la série documentaire Chercheuses d’étoiles" />
-                </a>
-                <p class="card-media__source">
-                    <a href="https://www.youtube.com/watch?v=2AO6MCP0AzM" class="u-link-highlight" target="_blank"
+                <!-- Carte : Proxima -->
+                <article class="card-media" role="listitem">
+                    <h2 class="card-media__title">Proxima</h2>
+                    <a class="card-media__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html"
+                        target="_blank" rel="noreferrer">
+                        <img class="card-media__img" src="/assets/img/proxima.webp" alt="Affiche du film Proxima" />
+                    </a>
+                    <p class="card-media__source">
+                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=256610.html" class="u-link-highlight"
+                            target="_blank" rel="noreferrer">
+                            Fiche Allociné
+                        </a>
+                    </p>
+                    <p class="card-media__desc">
+                        Le long‑métrage suit Sarah, astronaute française qui se
+                        prépare à une mission spatiale d’un an tout en gérant sa
+                        relation avec sa fille de huit ans. Le film aborde la
+                        charge mentale, la conciliation entre vocation scientifique
+                        et vie familiale, ainsi que la place des femmes dans les
+                        programmes spatiaux.
+                    </p>
+                </article>
+
+                <!-- Carte : Chercheuses d’étoiles -->
+                <article class="card-media" role="listitem">
+                    <h2 class="card-media__title">Chercheuses d’étoiles</h2>
+                    <a class="card-media__link" href="https://www.youtube.com/watch?v=2AO6MCP0AzM" target="_blank"
                         rel="noreferrer">
-                        Voir la vidéo
+                        <img class="card-media__img" src="/assets/img/docu.webp"
+                            alt="Visuel de la série documentaire Chercheuses d’étoiles" />
                     </a>
-                </p>
-                <p class="card-media__desc">
-                    La série documentaire « Chercheuses d’étoiles » met en
-                    lumière les grandes découvertes astronomiques réalisées par
-                    des femmes longtemps oubliées. Entre exploration de la
-                    matière noire, observation du ciel profond et histoire des
-                    sciences, elle prolonge les thématiques du site Étoiles
-                    oubliées.
-                </p>
-            </article>
+                    <p class="card-media__source">
+                        <a href="https://www.youtube.com/watch?v=2AO6MCP0AzM" class="u-link-highlight" target="_blank"
+                            rel="noreferrer">
+                            Voir la vidéo
+                        </a>
+                    </p>
+                    <p class="card-media__desc">
+                        La série documentaire « Chercheuses d’étoiles » met en
+                        lumière les grandes découvertes astronomiques réalisées par
+                        des femmes longtemps oubliées. Entre exploration de la
+                        matière noire, observation du ciel profond et histoire des
+                        sciences, elle prolonge les thématiques du site Étoiles
+                        oubliées.
+                    </p>
+                </article>
+            </div>
         </section>
+            <img src="/assets/img/deco-etoiles.webp" alt="Décor étoiles" class="hero__deco">
     </main>
 
     <footer class="footer">
@@ -262,7 +270,7 @@
                 <img class="footer__logo" src="/assets/icons/logo-etoiles.svg" alt="Logo Étoiles oubliées" />
                 <p class="footer__site-name">Étoiles oubliées</p>
             </div>
-    
+
             <nav class="footer__nav" aria-label="Navigation pied de page">
                 <h2 class="footer__title">NAVIGATION</h2>
                 <ul class="footer__list u-list-unstyled">
@@ -283,7 +291,7 @@
                     </li>
                 </ul>
             </nav>
-    
+
             <address class="footer__infos">
                 <h2 class="footer__title">CONTACT</h2>
                 <p> IUT de Montbéliard Département MMi <br>
@@ -300,7 +308,7 @@
                 </p>
             </address>
         </div>
-    
+
         <p class="footer__legal">
             projet réalisé en 2025 dans le cadre d’un exercice pédagogique
             au
