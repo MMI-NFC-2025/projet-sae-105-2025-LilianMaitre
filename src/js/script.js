@@ -141,16 +141,74 @@ const ARTICLE_CARDS = {
             href: "/fr/article5.html",
         },
     ],
+    en: [
+        {
+            id: "article1",
+            title: "Vera Rubin",
+            desc: "The journey of the astronomer who revealed dark matter.",
+            img: "/assets/img/veralabo.webp",
+            alt: "Portrait of Vera Rubin in a laboratory",
+            href: "/en/article1.html",
+        },
+        {
+            id: "article2",
+            title: "Women & literature",
+            desc: "How women scientists gain visibility in books.",
+            img: "/assets/img/femmesdescience.webp",
+            alt: "Colorful cover showing women of science",
+            href: "/en/article2.html",
+        },
+        {
+            id: "article3",
+            title: "Popularising theory",
+            desc: "Explaining Vera Rubin’s dark matter theory in simple terms.",
+            img: "/assets/img/galaxie.webp",
+            alt: "Simplified galaxy diagram to explain dark matter",
+            href: "/en/article3.html",
+        },
+        {
+            id: "article4",
+            title: "Interstellar",
+            desc: "Women scientists at the heart of Christopher Nolan’s cult film.",
+            img: "/assets/img/interstellar.webp",
+            alt: "Scene from the movie Interstellar",
+            href: "/en/article4.html",
+        },
+        {
+            id: "article5",
+            title: "Hubert Reeves’ book",
+            desc: "A poetic read to understand the story of matter and the cosmos.",
+            img: "/assets/img/livrehubert.webp",
+            alt: "Galaxy illustration inspired by Hubert Reeves’ book",
+            href: "/en/article5.html",
+        },
+    ],
 };
 
 const buildArticleRecommendations = () => {
-    const match = window.location.pathname.match(/\/(fr)\/(article[1-5])\.html$/);
+    const match = window.location.pathname.match(/\/(fr|en)\/(article[1-5])\.html$/);
     if (!match) return;
 
     const lang = match[1];
     const currentId = match[2];
     const cards = ARTICLE_CARDS[lang];
     if (!cards) return;
+
+    const LABELS = {
+        fr: {
+            heading: "Continuer la lecture",
+            prev: "Précédent",
+            next: "Suivant",
+            cta: "Lire l’article",
+        },
+        en: {
+            heading: "Keep reading",
+            prev: "Previous",
+            next: "Next",
+            cta: "Read the article",
+        },
+    };
+    const texts = LABELS[lang] || LABELS.fr;
 
     const candidates = cards.filter((card) => card.id !== currentId).slice(0, 4);
     if (!candidates.length) return;
@@ -164,11 +222,11 @@ const buildArticleRecommendations = () => {
 
     section.innerHTML = `
         <header class="section__header">
-            <h2 class="section__title" id="moreArticlesTitle">Continuer la lecture</h2>
+            <h2 class="section__title" id="moreArticlesTitle">${texts.heading}</h2>
         </header>
         <div class="carousel__controls" aria-label="Navigation du carrousel">
-            <button class="carousel__btn" type="button" data-dir="prev">Précédent</button>
-            <button class="carousel__btn" type="button" data-dir="next">Suivant</button>
+            <button class="carousel__btn" type="button" data-dir="prev">${texts.prev}</button>
+            <button class="carousel__btn" type="button" data-dir="next">${texts.next}</button>
         </div>
         <div class="carousel__track" role="list"></div>
     `;
@@ -186,7 +244,7 @@ const buildArticleRecommendations = () => {
                 <h3 class="card-menu__title">${card.title}</h3>
                 <p class="card-menu__text">${card.desc}</p>
                 <div class="card-menu__cta">
-                    <a class="card-menu__btn" href="${card.href}">Lire l’article</a>
+                    <a class="card-menu__btn" href="${card.href}">${texts.cta}</a>
                 </div>
             </div>
         `;
