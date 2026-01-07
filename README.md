@@ -6,5 +6,5 @@
 - NOM : Maitre
 - PRÉNOM : Lilian
 - GROUPE : B2
-- URL du site :
-- URL FIGMA :
+- URL du site : 
+- URL FIGMA : https://www.figma.com/design/NCqiKvXwrJUZ0fpUZGkWp6/Etoiles-Oubli%C3%A9es?node-id=0-1&t=yAiHEl8LT6wlqNNA-1

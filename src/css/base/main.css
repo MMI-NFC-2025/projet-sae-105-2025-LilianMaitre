@@ -412,3 +412,8 @@ p {
     color: var(--blanc);
 }
 
+.section__header{
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text-2xl);
+    font-weight: 400;
+}
