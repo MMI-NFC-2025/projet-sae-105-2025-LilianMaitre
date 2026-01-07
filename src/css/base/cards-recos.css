@@ -46,6 +46,10 @@
     padding: 0.5rem 0.25rem 0.75rem;
 }
 
+.carousel--articles .carousel__track {
+    grid-auto-columns: minmax(260px, 320px);
+}
+
 .carousel__track::-webkit-scrollbar {
     height: 8px;
 }
