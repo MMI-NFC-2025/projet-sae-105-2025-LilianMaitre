@@ -186,7 +186,7 @@ const ARTICLE_CARDS = {
 };
 
 const buildArticleRecommendations = () => {
-    const match = window.location.pathname.match(/\/(fr|en)\/(article[1-5])\.html$/);
+    const match = window.location.pathname.match(/\/(fr|en)\/(article[1-5])(?:\.html)?\/?$/);
     if (!match) return;
 
     const lang = match[1];
